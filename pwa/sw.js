@@ -26,12 +26,15 @@ const deleteOldCaches = async () => {
 
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open(cacheStorageKey).then(function (cache) {
-        cache.addAll([
-          './index.html',
-          './icon.png',
-        ]);
-    })
+    // caches.open(cacheStorageKey).then(function (cache) {
+    //   cache.addAll([
+    //     './index.html',
+    //     './icon.png',
+    //   ]);
+    // })
+    caches.open(cacheStorageKey)
+      .then(cache => cache.addAll(cacheList))
+      .then(() => self.skipWaiting())
   )
 })
 self.addEventListener('fetch', function (e) {

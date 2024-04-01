@@ -27,37 +27,41 @@ const deleteOldCaches = async () => {
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheStorageKey).then(function (cache) {
-        cache.addAll([
-          './index.html',
-          './icon.png',
-        ]);
+      cache.addAll([
+        './index.html',
+        './icon.png',
+      ]);
     })
   )
 })
-self.addEventListener('fetch', function (e) {
-  e.respondWith(
-    caches.match(e.request).then(function (response) {
-      if (response != null) {
-        return response
-      }
-      return fetch(e.request.url)
-    })
-  )
-})
-self.addEventListener('activate', function (e) {
-  e.waitUntil(
-    //获取所有cache名称
-    caches.keys().then(cacheNames => {
-      return Promise.all(
-        // 获取所有不同于当前版本名称cache下的内容
-        cacheNames.filter(cacheNames => {
-          return cacheNames !== cacheStorageKey
-        }).map(cacheNames => {
-          return caches.delete(cacheNames)
-        })
-      )
-    }).then(() => {
-      return self.clients.claim()
-    })
-  )
-})
+/**
+ * 缓存优先
+ * @param {*} request 
+ * @returns 
+ */
+const cacheFirst = async (request) => {
+  // 从缓存中读取 respondWith表示拦截请求并返回自定义的响应
+  const responseFromCache = await caches.match(request);
+  console.log('responseFromCache', responseFromCache);
+  if (responseFromCache) {
+    return responseFromCache
+  }
+  // 如果缓存中没有，就从网络中请求
+  const responseFromServer = await fetch(request);
+  const cache = await caches.open(cacheName);
+  // 将请求到的资源添加到缓存中
+  cache.put(request, responseFromServer.clone());
+  return responseFromServer;
+}
+
+self.addEventListener("fetch", (event) => {
+  // 拦截请求
+  console.log('caches match',);
+  console.log('fetch', event.request.url);
+  event.respondWith(cacheFirst(event.request));
+});
+self.addEventListener('activate', function (event) {
+  console.log('activate');
+  // 删除旧的缓存，直到清除完成后才继续激活
+  event.waitUntil(deleteOldCaches());
+});
