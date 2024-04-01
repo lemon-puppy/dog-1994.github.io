@@ -1,0 +1,27 @@
+
+dianji.png
+size: 345,147
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bowen1
+  rotate: false
+  xy: 293, 95
+  size: 50, 50
+  orig: 53, 53
+  offset: 1, 2
+  index: -1
+bowen2
+  rotate: false
+  xy: 2, 2
+  size: 143, 143
+  orig: 153, 153
+  offset: 5, 5
+  index: -1
+手指
+  rotate: false
+  xy: 147, 3
+  size: 144, 142
+  orig: 144, 145
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,62 @@
+
+duchangjiesuan.png
+size: 1189,895
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: true
+  xy: 528, 225
+  size: 668, 298
+  orig: 668, 300
+  offset: 0, 1
+  index: -1
+chibang
+  rotate: true
+  xy: 582, 4
+  size: 219, 214
+  orig: 219, 214
+  offset: 0, 0
+  index: -1
+guang1
+  rotate: true
+  xy: 2, 371
+  size: 522, 524
+  orig: 536, 538
+  offset: 4, 6
+  index: -1
+guang2 拷贝
+  rotate: true
+  xy: 828, 265
+  size: 628, 359
+  orig: 628, 359
+  offset: 0, 0
+  index: -1
+quan
+  rotate: false
+  xy: 828, 22
+  size: 241, 241
+  orig: 241, 241
+  offset: 0, 0
+  index: -1
+干的不错
+  rotate: false
+  xy: 2, 281
+  size: 291, 88
+  orig: 291, 88
+  offset: 0, 0
+  index: -1
+椭圆 6 拷贝 8
+  rotate: false
+  xy: 295, 327
+  size: 42, 42
+  orig: 48, 48
+  offset: 3, 3
+  index: -1
+矩形 37 拷贝
+  rotate: false
+  xy: 2, 2
+  size: 578, 221
+  orig: 592, 234
+  offset: 7, 7
+  index: -1

@@ -1,0 +1,27 @@
+
+jianzaodh.png
+size: 385,212
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shanshui
+  rotate: true
+  xy: 252, 12
+  size: 61, 77
+  orig: 67, 84
+  offset: 3, 3
+  index: -1
+yunwu
+  rotate: false
+  xy: 2, 2
+  size: 248, 208
+  orig: 256, 214
+  offset: 4, 3
+  index: -1
+锤子
+  rotate: true
+  xy: 252, 75
+  size: 135, 131
+  orig: 135, 131
+  offset: 0, 0
+  index: -1

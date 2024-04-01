@@ -1,0 +1,111 @@
+
+Engine.png
+size: 408,125
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 393, 103
+  size: 20, 13
+  orig: 23, 15
+  offset: 2, 1
+  index: -1
+2
+  rotate: true
+  xy: 283, 5
+  size: 30, 17
+  orig: 32, 19
+  offset: 1, 1
+  index: -1
+3
+  rotate: false
+  xy: 345, 44
+  size: 41, 26
+  orig: 43, 28
+  offset: 1, 1
+  index: -1
+4
+  rotate: true
+  xy: 351, 2
+  size: 40, 26
+  orig: 42, 28
+  offset: 1, 1
+  index: -1
+5
+  rotate: false
+  xy: 200, 4
+  size: 43, 31
+  orig: 45, 33
+  offset: 1, 1
+  index: -1
+6
+  rotate: false
+  xy: 245, 4
+  size: 36, 31
+  orig: 38, 33
+  offset: 1, 1
+  index: -1
+7
+  rotate: true
+  xy: 172, 3
+  size: 32, 26
+  orig: 34, 29
+  offset: 1, 2
+  index: -1
+8
+  rotate: false
+  xy: 393, 91
+  size: 9, 10
+  orig: 11, 12
+  offset: 1, 1
+  index: -1
+图层 1
+  rotate: true
+  xy: 345, 72
+  size: 51, 26
+  orig: 56, 30
+  offset: 3, 2
+  index: -1
+图层 2
+  rotate: false
+  xy: 302, 8
+  size: 47, 27
+  orig: 51, 32
+  offset: 2, 2
+  index: -1
+图层 3
+  rotate: true
+  xy: 373, 77
+  size: 46, 18
+  orig: 50, 22
+  offset: 3, 2
+  index: -1
+图层 4
+  rotate: true
+  xy: 379, 3
+  size: 39, 26
+  orig: 43, 36
+  offset: 2, 2
+  index: -1
+图层 6
+  rotate: true
+  xy: 388, 53
+  size: 22, 16
+  orig: 27, 20
+  offset: 2, 2
+  index: -1
+引擎
+  rotate: false
+  xy: 2, 7
+  size: 168, 116
+  orig: 168, 116
+  offset: 0, 0
+  index: -1
+栅栏
+  rotate: false
+  xy: 172, 37
+  size: 171, 86
+  orig: 173, 88
+  offset: 1, 1
+  index: -1
