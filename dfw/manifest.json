@@ -1,6 +1,6 @@
 {
-    "name": "一个PWA示例",
-    "short_name": "PWA示例",
+    "name": "dfw",
+    "short_name": "dfw",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#fff",
