@@ -2,9 +2,9 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox
 var cacheStorageKey = 'minimal-pwa-1'
 var cacheList = [
   '/',
-  'index.html',
-  'main.css',
-  'icon.png'
+  './index.html',
+  './main.css',
+  './icon.png'
 ]
 /**
  * 删除缓存
