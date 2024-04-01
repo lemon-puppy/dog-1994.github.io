@@ -57,7 +57,7 @@
                         console.log("激活 Service worker");
                     }
                     registration.onupdatefound = function (){
-                        const installingWorker = registration.installing;
+                        const installingWorker = registration.active;
                         installingWorker.onstatechange = function () {
                             console.log("state",installingWorker.state);
                             if(installingWorker.state === 'activated'){
