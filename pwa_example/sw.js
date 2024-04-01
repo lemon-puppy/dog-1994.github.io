@@ -24,8 +24,7 @@ self.addEventListener('install', function (event) {
         // 创建了叫做 v1 版本的缓存池
         caches.open(cacheName).then(function (cache) {
             cache.addAll([
-                './index.html', // 相对于 sw.js 的路径 缓存 index.html
-                './images/avatar.png', // 相对于 sw.js 的路径 缓存 index.html
+                '/pwa_example/index.html', // 相对于 sw.js 的路径 缓存 index.html
             ]);
         })
     );
