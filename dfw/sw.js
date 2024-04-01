@@ -18,7 +18,7 @@ const deleteCache = async (key) => {
  * 删除旧的缓存
  */
 const deleteOldCaches = async () => {
-  const cacheKeepList = [cacheName];
+  const cacheKeepList = [cacheStorageKey];
   const keyList = await caches.keys();
   const cachesToDelete = keyList.filter((key) => !cacheKeepList.includes(key));
   await Promise.all(cachesToDelete.map(deleteCache));
@@ -48,7 +48,7 @@ const cacheFirst = async (request) => {
   }
   // 如果缓存中没有，就从网络中请求
   const responseFromServer = await fetch(request);
-  const cache = await caches.open(cacheName);
+  const cache = await caches.open(cacheStorageKey);
   // 将请求到的资源添加到缓存中
   cache.put(request, responseFromServer.clone());
   return responseFromServer;
