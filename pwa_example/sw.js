@@ -22,9 +22,10 @@ self.addEventListener('install', function (event) {
     // 确保 Service Worker 不会在 waitUntil() 里面的代码执行完毕之前安装完成
     event.waitUntil(
         // 创建了叫做 v1 版本的缓存池
-        caches.open(cacheName).then(function (cache) {
+        caches.open(cacheStorageKey).then(function (cache) {
             cache.addAll([
-                '/pwa_example/index.html', // 相对于 sw.js 的路径 缓存 index.html
+              './index.html',
+              './icon.png',
             ]);
         })
     );
