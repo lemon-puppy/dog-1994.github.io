@@ -1,0 +1,15 @@
+{
+    "name": "Service测试网站完整名称",
+    "short_name": "Service测试网站",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#f0f0f0",
+    "description": "网站描述",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "132x132",
+            "type": "image/png"
+        }
+    ]
+}
