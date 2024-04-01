@@ -59,6 +59,7 @@
                     registration.onupdatefound = function (){
                         const installingWorker = registration.installing;
                         installingWorker.onstatechange = function () {
+                            console.log("state",installingWorker.state);
                             if(installingWorker.state === 'activated'){
                                 if(navigator.serviceWorker.controller){
                                     checkAppUpdate();
