@@ -29,6 +29,7 @@ self.addEventListener('install', e => {
     caches.open(cacheStorageKey)
       .then(function (cache) {
         cache.addAll([
+          './',
           './index.html',
           './icon.png',
         ]);
