@@ -56,17 +56,17 @@
                     } else if (registration.active) {
                         console.log("激活 Service worker");
                     }
-                    registration.onupdatefound = function (){
-                        const installingWorker = registration.active;
-                        installingWorker.onstatechange = function () {
-                            console.log("state",installingWorker.state);
-                            if(installingWorker.state === 'activated'){
-                                if(navigator.serviceWorker.controller){
-                                    checkAppUpdate();
-                                }
-                            }
-                        }
-                    }
+                    // registration.onupdatefound = function (){
+                    //     const installingWorker = registration.installing;
+                    //     installingWorker.onstatechange = function () {
+                    //         console.log("state",installingWorker.state);
+                    //         if(installingWorker.state === 'activated'){
+                    //             if(navigator.serviceWorker.controller){
+                    //                 checkAppUpdate();
+                    //             }
+                    //         }
+                    //     }
+                    // }
                 } catch (error) {
                     console.error(`注册失败：${error}`);
                 }
