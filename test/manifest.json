@@ -1,9 +1,9 @@
 {
-"name": "The name of your application",
-"short_name": "This name will show in your Windows taskbar, in the start menu, and Android homescreen",
+"name": "test",
+"short_name": "testPwa",
 "start_url": ".",
 "display": "standalone",
-"description": "A description for your application",
+"description": "test vscode pwa",
 "lang": "en",
 "dir": "auto",
 "theme_color": "#000000",
