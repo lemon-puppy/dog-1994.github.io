@@ -1,0 +1,34 @@
+{
+"name": "dfw",
+"short_name": "dfw_pwa",
+"start_url": ".",
+"display": "standalone",
+"description": "A description for your application",
+"lang": "en",
+"dir": "auto",
+"theme_color": "#000000",
+"background_color": "#000000",
+"orientation": "portrait",
+"icons": [
+    {
+        "src": "https://www.pwabuilder.com/assets/icons/icon_512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+    }
+],
+"related_applications": [
+    {
+        "platform":"windows",
+        "url": " The URL to your app in that app store"
+    }
+],
+"prefer_related_applications": false,
+"shortcuts": [
+    {
+        "name":"The name you would like to be displayed for your shortcut",
+        "url":"The url you would like to open when the user chooses this shortcut. This must be a URL local to your PWA. For example: If my start_url is /, this URL must be something like /shortcut",
+        "description":"A description of the functionality of this shortcut"
+    }
+]
+}

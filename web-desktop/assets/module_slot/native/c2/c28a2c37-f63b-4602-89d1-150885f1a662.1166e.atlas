@@ -1,0 +1,111 @@
+
+sazuanshi.png
+size: 1796,121
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 1629, 16
+  size: 102, 103
+  orig: 150, 150
+  offset: 24, 24
+  index: -1
+10
+  rotate: true
+  xy: 1094, 15
+  size: 104, 119
+  orig: 150, 150
+  offset: 23, 16
+  index: -1
+11
+  rotate: true
+  xy: 299, 13
+  size: 106, 136
+  orig: 150, 150
+  offset: 22, 7
+  index: -1
+12
+  rotate: true
+  xy: 2, 11
+  size: 108, 147
+  orig: 150, 150
+  offset: 21, 2
+  index: -1
+13
+  rotate: true
+  xy: 151, 12
+  size: 107, 146
+  orig: 150, 150
+  offset: 21, 2
+  index: -1
+14
+  rotate: true
+  xy: 706, 14
+  size: 105, 132
+  orig: 150, 150
+  offset: 22, 9
+  index: -1
+2
+  rotate: false
+  xy: 1424, 10
+  size: 100, 109
+  orig: 150, 150
+  offset: 25, 21
+  index: -1
+3
+  rotate: true
+  xy: 971, 16
+  size: 103, 121
+  orig: 150, 150
+  offset: 23, 15
+  index: -1
+4
+  rotate: true
+  xy: 572, 14
+  size: 105, 132
+  orig: 150, 150
+  offset: 22, 9
+  index: -1
+5
+  rotate: true
+  xy: 437, 13
+  size: 106, 133
+  orig: 150, 150
+  offset: 22, 9
+  index: -1
+6
+  rotate: true
+  xy: 840, 15
+  size: 104, 129
+  orig: 150, 150
+  offset: 23, 11
+  index: -1
+7
+  rotate: false
+  xy: 1215, 2
+  size: 102, 117
+  orig: 150, 150
+  offset: 24, 17
+  index: -1
+8
+  rotate: false
+  xy: 1526, 13
+  size: 101, 106
+  orig: 150, 150
+  offset: 24, 22
+  index: -1
+9
+  rotate: false
+  xy: 1319, 13
+  size: 103, 106
+  orig: 150, 150
+  offset: 23, 22
+  index: -1
+shanshui
+  rotate: false
+  xy: 1733, 42
+  size: 61, 77
+  orig: 67, 84
+  offset: 3, 3
+  index: -1

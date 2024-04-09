@@ -1,0 +1,41 @@
+
+gxhd_en.png
+size: 875,889
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+congrats
+  rotate: true
+  xy: 526, 501
+  size: 386, 85
+  orig: 386, 85
+  offset: 0, 0
+  index: -1
+guang1
+  rotate: false
+  xy: 2, 363
+  size: 522, 524
+  orig: 536, 538
+  offset: 4, 6
+  index: -1
+guang2 拷贝
+  rotate: false
+  xy: 2, 2
+  size: 628, 359
+  orig: 628, 359
+  offset: 0, 0
+  index: -1
+gxhdBG
+  rotate: true
+  xy: 632, 309
+  size: 578, 221
+  orig: 591, 233
+  offset: 6, 6
+  index: -1
+quan
+  rotate: false
+  xy: 632, 66
+  size: 241, 241
+  orig: 241, 241
+  offset: 0, 0
+  index: -1

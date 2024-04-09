@@ -1,0 +1,356 @@
+
+battle royale.png
+size: 650,1030
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Battle royale 中
+  rotate: false
+  xy: 291, 328
+  size: 199, 245
+  orig: 203, 250
+  offset: 2, 2
+  index: -1
+Battle royale 光
+  rotate: false
+  xy: 2, 164
+  size: 199, 245
+  orig: 203, 250
+  offset: 2, 2
+  index: -1
+Battle royale 底
+  rotate: true
+  xy: 291, 143
+  size: 183, 227
+  orig: 185, 229
+  offset: 1, 1
+  index: -1
+Battle royale 投影
+  rotate: false
+  xy: 2, 12
+  size: 214, 150
+  orig: 234, 166
+  offset: 6, 9
+  index: -1
+PLAY光
+  rotate: false
+  xy: 545, 613
+  size: 66, 76
+  orig: 66, 76
+  offset: 0, 0
+  index: -1
+PLAY底
+  rotate: false
+  xy: 520, 264
+  size: 66, 76
+  orig: 66, 76
+  offset: 0, 0
+  index: -1
+play框框
+  rotate: false
+  xy: 203, 309
+  size: 86, 100
+  orig: 86, 100
+  offset: 0, 0
+  index: -1
+play白点1
+  rotate: true
+  xy: 502, 6
+  size: 31, 45
+  orig: 32, 47
+  offset: 0, 1
+  index: -1
+play白点2
+  rotate: true
+  xy: 427, 5
+  size: 32, 36
+  orig: 33, 47
+  offset: 0, 4
+  index: -1
+圆角矩形 1 拷贝 10
+  rotate: true
+  xy: 2, 3
+  size: 7, 92
+  orig: 9, 94
+  offset: 1, 1
+  index: -1
+圆角矩形 1 拷贝 11
+  rotate: false
+  xy: 520, 211
+  size: 76, 51
+  orig: 80, 54
+  offset: 2, 1
+  index: -1
+圆角矩形 1 拷贝 12
+  rotate: true
+  xy: 599, 539
+  size: 72, 47
+  orig: 79, 55
+  offset: 1, 2
+  index: -1
+圆角矩形 1 拷贝 13
+  rotate: false
+  xy: 549, 2
+  size: 37, 27
+  orig: 48, 35
+  offset: 3, 3
+  index: -1
+圆角矩形 1 拷贝 14
+  rotate: false
+  xy: 269, 143
+  size: 3, 50
+  orig: 6, 67
+  offset: 2, 12
+  index: -1
+圆角矩形 1 拷贝 5
+  rotate: false
+  xy: 282, 143
+  size: 7, 70
+  orig: 10, 73
+  offset: 2, 2
+  index: -1
+圆角矩形 1 拷贝 6
+  rotate: false
+  xy: 282, 215
+  size: 7, 92
+  orig: 9, 94
+  offset: 1, 1
+  index: -1
+圆角矩形 1 拷贝 7
+  rotate: true
+  xy: 96, 3
+  size: 7, 91
+  orig: 9, 94
+  offset: 1, 1
+  index: -1
+圆角矩形 1 拷贝 8
+  rotate: true
+  xy: 549, 31
+  size: 6, 92
+  orig: 9, 94
+  offset: 2, 1
+  index: -1
+圆角矩形 1 拷贝 9
+  rotate: true
+  xy: 553, 848
+  size: 7, 91
+  orig: 9, 94
+  offset: 1, 1
+  index: -1
+大白点
+  rotate: true
+  xy: 520, 144
+  size: 65, 71
+  orig: 71, 100
+  offset: 2, 4
+  index: -1
+大白点2
+  rotate: false
+  xy: 564, 754
+  size: 67, 72
+  orig: 71, 101
+  offset: 0, 4
+  index: -1
+彩灯1
+  rotate: false
+  xy: 386, 691
+  size: 176, 127
+  orig: 180, 132
+  offset: 2, 3
+  index: -1
+彩灯2
+  rotate: true
+  xy: 520, 857
+  size: 171, 119
+  orig: 180, 127
+  offset: 5, 4
+  index: -1
+彩灯底1
+  rotate: false
+  xy: 386, 580
+  size: 157, 109
+  orig: 159, 111
+  offset: 1, 1
+  index: -1
+彩灯底2
+  rotate: true
+  xy: 492, 420
+  size: 158, 105
+  orig: 160, 107
+  offset: 1, 1
+  index: -1
+楼顶钻石
+  rotate: false
+  xy: 465, 5
+  size: 35, 32
+  orig: 38, 34
+  offset: 2, 1
+  index: -1
+橙光
+  rotate: true
+  xy: 2, 411
+  size: 162, 287
+  orig: 162, 287
+  offset: 0, 0
+  index: -1
+灯泡白点1
+  rotate: true
+  xy: 599, 490
+  size: 47, 43
+  orig: 57, 47
+  offset: 4, 0
+  index: -1
+灯泡白点2
+  rotate: false
+  xy: 599, 445
+  size: 43, 43
+  orig: 57, 47
+  offset: 8, 1
+  index: -1
+灯泡白点3
+  rotate: false
+  xy: 606, 386
+  size: 41, 41
+  orig: 57, 46
+  offset: 11, 2
+  index: -1
+白点1
+  rotate: true
+  xy: 553, 828
+  size: 18, 37
+  orig: 20, 39
+  offset: 1, 1
+  index: -1
+白点2
+  rotate: true
+  xy: 593, 143
+  size: 66, 55
+  orig: 71, 101
+  offset: 2, 3
+  index: -1
+紫光
+  rotate: false
+  xy: 492, 342
+  size: 112, 76
+  orig: 115, 80
+  offset: 2, 2
+  index: -1
+紫光底
+  rotate: false
+  xy: 492, 342
+  size: 112, 76
+  orig: 115, 80
+  offset: 2, 2
+  index: -1
+红光
+  rotate: true
+  xy: 427, 39
+  size: 102, 216
+  orig: 102, 216
+  offset: 0, 0
+  index: -1
+红光2
+  rotate: false
+  xy: 386, 820
+  size: 132, 208
+  orig: 132, 208
+  offset: 0, 0
+  index: -1
+红光3
+  rotate: false
+  xy: 218, 7
+  size: 207, 134
+  orig: 207, 134
+  offset: 0, 0
+  index: -1
+红白点1
+  rotate: false
+  xy: 598, 243
+  size: 41, 43
+  orig: 57, 47
+  offset: 10, 3
+  index: -1
+组 1 拷贝
+  rotate: false
+  xy: 2, 575
+  size: 382, 453
+  orig: 384, 455
+  offset: 1, 1
+  index: -1
+蓝光
+  rotate: true
+  xy: 203, 195
+  size: 112, 77
+  orig: 115, 80
+  offset: 2, 1
+  index: -1
+蓝光底
+  rotate: true
+  xy: 203, 195
+  size: 112, 77
+  orig: 115, 80
+  offset: 2, 1
+  index: -1
+角落钻石
+  rotate: false
+  xy: 520, 830
+  size: 31, 25
+  orig: 33, 27
+  offset: 1, 1
+  index: -1
+钻石光
+  rotate: false
+  xy: 588, 288
+  size: 51, 52
+  orig: 59, 59
+  offset: 4, 3
+  index: -1
+钻石光2
+  rotate: false
+  xy: 218, 145
+  size: 49, 48
+  orig: 59, 58
+  offset: 5, 5
+  index: -1
+钻石白点
+  rotate: false
+  xy: 564, 691
+  size: 68, 61
+  orig: 71, 100
+  offset: 1, 4
+  index: -1
+黄箭头1
+  rotate: false
+  xy: 545, 598
+  size: 20, 13
+  orig: 70, 31
+  offset: 48, 16
+  index: -1
+黄箭头2
+  rotate: false
+  xy: 599, 429
+  size: 21, 14
+  orig: 23, 16
+  offset: 1, 1
+  index: -1
+黄箭头3
+  rotate: true
+  xy: 203, 171
+  size: 22, 13
+  orig: 24, 16
+  offset: 1, 1
+  index: -1
+黄箭头4
+  rotate: true
+  xy: 631, 7
+  size: 22, 15
+  orig: 25, 17
+  offset: 2, 1
+  index: -1
+黄箭头底
+  rotate: false
+  xy: 588, 3
+  size: 41, 26
+  orig: 70, 31
+  offset: 27, 3
+  index: -1
