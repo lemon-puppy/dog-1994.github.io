@@ -1,14 +1,14 @@
 {
 "name": "The name of your application",
 "short_name": "This name will show in your Windows taskbar, in the start menu, and Android homescreen",
-"start_url": "/",
+"start_url": ".",
 "display": "standalone",
 "description": "A description for your application",
-"lang": " The default language of your application",
+"lang": "en",
 "dir": "auto",
 "theme_color": "#000000",
 "background_color": "#000000",
-"orientation": "any",
+"orientation": "portrait",
 "icons": [
     {
         "src": "https://www.pwabuilder.com/assets/icons/icon_512.png",
