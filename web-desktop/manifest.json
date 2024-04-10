@@ -2,6 +2,7 @@
 "name": "dfw",
 "short_name": "dfw_pwa",
 "start_url": ".",
+"id":"dfw_desktop",
 "display": "standalone",
 "description": "A description for your application",
 "lang": "en",
