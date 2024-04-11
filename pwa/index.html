@@ -55,6 +55,7 @@
                         console.log("已安装 Service worker installed");
                     } else if (registration.active) {
                         console.log("激活 Service worker");
+                        checkAppUpdate();
                     }
                     // registration.onupdatefound = function (){
                     //     const installingWorker = registration.installing;

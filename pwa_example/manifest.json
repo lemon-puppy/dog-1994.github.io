@@ -2,6 +2,7 @@
     "name": "Service测试网站完整名称",
     "short_name": "Service测试网站",
     "start_url": ".",
+    "id":"pwa_example",
     "display": "standalone",
     "background_color": "#f0f0f0",
     "description": "网站描述",

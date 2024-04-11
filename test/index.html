@@ -6,12 +6,31 @@
   <title>Hello PWA</title>
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<script>navigator.serviceWorker.register("service-worker.js")</script> 
-<link rel="manifest" href="manifest.json" />
+  <script>
+    if ('serviceWorker' in window.navigator) {
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange',()=>{
+        if(refreshing){
+          return;
+        }
+        refreshing = true;
+        window.location.reload();
+      })
+      navigator.serviceWorker.register("service-worker.js");
+      // if (registration.installing) {
+      //   console.log("正在安装 Service worker");
+      // } else if (registration.waiting) {
+      //   console.log("已安装 Service worker installed");
+      // } else if (registration.active) {
+      //   console.log("激活 Service worker");
+      // }
+    }
+  </script>
+  <link rel="manifest" href="manifest.json" />
 </head>
 
 <body>
-  <h3>Hello</h3>
+  <h3>Hello 222</h3>
 </body>
 
 
