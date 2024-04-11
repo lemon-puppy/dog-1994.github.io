@@ -2,6 +2,7 @@
 "name": "test",
 "short_name": "testPwa",
 "start_url": ".",
+"id": "pwa_app_id",
 "display": "standalone",
 "description": "test vscode pwa",
 "lang": "en",
