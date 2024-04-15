@@ -45,8 +45,21 @@ const getFixedUrl = (req) => {
     }
     return url.href
 }
+
+// var urlsToCache = [
+//     '/',
+//     '/index.html',
+// ]
+// var CACHE_NAME = 'test_cache_111';
+
 self.addEventListener('install', event => {
     self.skipWaiting();
+    // event.waitUntil(
+    //     caches.open(CACHE_NAME)
+    //         .then(function(cache){
+    //             return cache.addAll(urlsToCache);
+    //         })
+    // );
 })
 /**
  *  @Lifecycle Activate
@@ -70,6 +83,7 @@ self.addEventListener('message',event=>{
  *  void respondWith(Promise<Response> r)
  */
 self.addEventListener('fetch', event => {
+    console.log("fetch",event);
     // Skip some of cross-origin requests, like those for Google Analytics.
     if (HOSTNAME_WHITELIST.indexOf(new URL(event.request.url).hostname) > -1) {
         // Stale-while-revalidate

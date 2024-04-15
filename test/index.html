@@ -9,25 +9,18 @@
   <script>
     if ('serviceWorker' in window.navigator) {
       let refreshing = false;
-      navigator.serviceWorker.addEventListener('controllerchange',()=>{
-        if(refreshing){
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (refreshing) {
           return;
         }
         refreshing = true;
         window.location.reload();
       })
-      navigator.serviceWorker.register("service-worker.js").then(reg=>{
-        if(reg.waiting){
-          reg.waiting.postMessage({type:'SKIP_WAITING'})
+      navigator.serviceWorker.register("service-worker.js").then(reg => {
+        if (reg.waiting) {
+          reg.waiting.postMessage({ type: 'SKIP_WAITING' })
         }
       });
-      // if (registration.installing) {
-      //   console.log("正在安装 Service worker");
-      // } else if (registration.waiting) {
-      //   console.log("已安装 Service worker installed");
-      // } else if (registration.active) {
-      //   console.log("激活 Service worker");
-      // }
     }
   </script>
   <link rel="manifest" href="manifest.json" />
@@ -35,7 +28,7 @@
 
 <body>
   <h3>Hello World</h3>
-  <h3>test auto update</h3>
+  <h3>test auto update222</h3>
 </body>
 
 
