@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
 
-  <title>dfw</title>
+  <title>Cocos Creator | dfw</title>
 
-  <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1, minimum-scale=1,maximum-scale=5"/>
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="full-screen" content="yes"/>
   <meta name="screen-orientation" content="portrait"/>
@@ -23,8 +23,8 @@
 <body>
 <h1 class="header">dfw</h1>
 
-<div id="GameDiv" style="width:432px; height: 768px;">
-  <canvas id="GameCanvas" width="432" height="768"></canvas>
+<div id="GameDiv" style="width:360px; height: 640px;">
+  <canvas id="GameCanvas" width="360" height="640"></canvas>
   <div id="splash">
     <div class="progress-bar stripes">
       <span style="width: 0%"></span>
@@ -34,8 +34,8 @@
 
 <p class="footer">Made with <a href="https://www.cocos.com/products#CocosCreator" title="cocos creator">Cocos Creator</a></p>
 
-<script src="src/settings.260e5.js" charset="utf-8"></script>
-<script src="main.90c76.js" charset="utf-8"></script>
+<script src="src/settings.ee6ff.js" charset="utf-8"></script>
+<script src="main.74ae6.js" charset="utf-8"></script>
 
 <script type="text/javascript">
 (function () {
@@ -61,7 +61,7 @@
       document.body.appendChild(domScript);
     }
 
-    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.51009.js', function () {
+    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.cc1a8.js', function () {
       if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
         loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
       }
