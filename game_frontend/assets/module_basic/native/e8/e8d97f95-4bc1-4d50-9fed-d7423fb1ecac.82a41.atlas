@@ -1,0 +1,300 @@
+
+blindbox.png
+size: 1902,368
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+3
+  rotate: false
+  xy: 1746, 146
+  size: 42, 35
+  orig: 46, 51
+  offset: 4, 6
+  index: -1
+4
+  rotate: true
+  xy: 1624, 156
+  size: 25, 24
+  orig: 27, 31
+  offset: 0, 3
+  index: -1
+5
+  rotate: false
+  xy: 978, 88
+  size: 94, 56
+  orig: 97, 90
+  offset: 0, 13
+  index: -1
+6
+  rotate: false
+  xy: 1115, 112
+  size: 54, 39
+  orig: 78, 73
+  offset: 5, 13
+  index: -1
+图层 22 拷贝 10
+  rotate: true
+  xy: 602, 3
+  size: 13, 28
+  orig: 15, 33
+  offset: 1, 2
+  index: -1
+图层 22 拷贝 11
+  rotate: true
+  xy: 735, 4
+  size: 12, 26
+  orig: 14, 32
+  offset: 1, 3
+  index: -1
+图层 22 拷贝 12
+  rotate: true
+  xy: 763, 4
+  size: 12, 25
+  orig: 15, 30
+  offset: 1, 2
+  index: -1
+图层 22 拷贝 13
+  rotate: true
+  xy: 1141, 98
+  size: 12, 25
+  orig: 15, 29
+  offset: 1, 1
+  index: -1
+图层 22 拷贝 14
+  rotate: true
+  xy: 1430, 166
+  size: 11, 23
+  orig: 14, 29
+  offset: 1, 3
+  index: -1
+图层 22 拷贝 15
+  rotate: true
+  xy: 1624, 5
+  size: 11, 23
+  orig: 14, 28
+  offset: 1, 2
+  index: -1
+图层 22 拷贝 16
+  rotate: false
+  xy: 1115, 88
+  size: 11, 22
+  orig: 14, 26
+  offset: 1, 2
+  index: -1
+图层 22 拷贝 17
+  rotate: false
+  xy: 1128, 89
+  size: 11, 21
+  orig: 14, 26
+  offset: 1, 3
+  index: -1
+图层 22 拷贝 9
+  rotate: true
+  xy: 704, 4
+  size: 12, 29
+  orig: 15, 35
+  offset: 1, 3
+  index: -1
+图层 23 拷贝 3
+  rotate: true
+  xy: 1790, 111
+  size: 39, 54
+  orig: 44, 64
+  offset: 3, 4
+  index: -1
+图层 23 拷贝 4
+  rotate: false
+  xy: 1074, 96
+  size: 39, 55
+  orig: 45, 64
+  offset: 3, 3
+  index: -1
+图层 23 拷贝 5
+  rotate: true
+  xy: 1846, 112
+  size: 38, 54
+  orig: 45, 64
+  offset: 4, 4
+  index: -1
+图层 8 拷贝 2
+  rotate: true
+  xy: 2, 7
+  size: 359, 464
+  orig: 361, 466
+  offset: 1, 1
+  index: -1
+大光1
+  rotate: false
+  xy: 703, 18
+  size: 85, 61
+  orig: 85, 61
+  offset: 0, 0
+  index: -1
+大光2
+  rotate: true
+  xy: 790, 4
+  size: 75, 68
+  orig: 75, 68
+  offset: 0, 0
+  index: -1
+字光
+  rotate: false
+  xy: 1430, 179
+  size: 186, 187
+  orig: 190, 191
+  offset: 2, 2
+  index: -1
+字底
+  rotate: true
+  xy: 1020, 153
+  size: 213, 205
+  orig: 221, 216
+  offset: 4, 6
+  index: -1
+字特亮光
+  rotate: true
+  xy: 1227, 157
+  size: 209, 201
+  orig: 221, 213
+  offset: 7, 5
+  index: -1
+字表面
+  rotate: false
+  xy: 1618, 183
+  size: 181, 183
+  orig: 183, 185
+  offset: 1, 1
+  index: -1
+射1
+  rotate: false
+  xy: 703, 81
+  size: 90, 285
+  orig: 90, 285
+  offset: 0, 0
+  index: -1
+射2
+  rotate: false
+  xy: 795, 81
+  size: 90, 285
+  orig: 90, 285
+  offset: 0, 0
+  index: -1
+射3
+  rotate: false
+  xy: 887, 81
+  size: 89, 285
+  orig: 89, 285
+  offset: 0, 0
+  index: -1
+小光
+  rotate: true
+  xy: 468, 18
+  size: 348, 233
+  orig: 348, 233
+  offset: 0, 0
+  index: -1
+形状 1 拷贝 6
+  rotate: false
+  xy: 860, 7
+  size: 96, 72
+  orig: 99, 76
+  offset: 2, 3
+  index: -1
+星星底
+  rotate: false
+  xy: 1746, 14
+  size: 15, 130
+  orig: 18, 136
+  offset: 1, 3
+  index: -1
+星星底2
+  rotate: false
+  xy: 1801, 274
+  size: 97, 92
+  orig: 103, 102
+  offset: 3, 4
+  index: -1
+牌光
+  rotate: true
+  xy: 1459, 7
+  size: 170, 163
+  orig: 180, 175
+  offset: 5, 6
+  index: -1
+牌底
+  rotate: false
+  xy: 1176, 2
+  size: 158, 149
+  orig: 167, 157
+  offset: 5, 4
+  index: -1
+牌底2
+  rotate: true
+  xy: 1336, 7
+  size: 148, 121
+  orig: 155, 129
+  offset: 3, 4
+  index: -1
+牌表面光
+  rotate: true
+  xy: 1624, 18
+  size: 132, 120
+  orig: 134, 123
+  offset: 1, 2
+  index: -1
+牌表面光2
+  rotate: true
+  xy: 1801, 152
+  size: 120, 93
+  orig: 122, 95
+  offset: 1, 1
+  index: -1
+箭头光
+  rotate: false
+  xy: 958, 7
+  size: 96, 72
+  orig: 99, 76
+  offset: 2, 3
+  index: -1
+紫光1
+  rotate: true
+  xy: 632, 4
+  size: 12, 70
+  orig: 12, 70
+  offset: 0, 0
+  index: -1
+紫光2
+  rotate: false
+  xy: 1056, 8
+  size: 118, 78
+  orig: 122, 82
+  offset: 2, 2
+  index: -1
+紫光3
+  rotate: true
+  xy: 1649, 6
+  size: 10, 68
+  orig: 13, 70
+  offset: 1, 1
+  index: -1
+蓝光1
+  rotate: false
+  xy: 1001, 151
+  size: 17, 215
+  orig: 20, 218
+  offset: 2, 1
+  index: -1
+蓝光2
+  rotate: false
+  xy: 978, 146
+  size: 21, 220
+  orig: 23, 225
+  offset: 1, 2
+  index: -1
+黄束光
+  rotate: true
+  xy: 468, 3
+  size: 13, 132
+  orig: 16, 135
+  offset: 2, 1
+  index: -1

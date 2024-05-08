@@ -1,0 +1,230 @@
+
+slot.png
+size: 1712,447
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bonus
+  rotate: false
+  xy: 1358, 187
+  size: 46, 108
+  orig: 48, 110
+  offset: 1, 1
+  index: -1
+Bonus底
+  rotate: false
+  xy: 1406, 187
+  size: 46, 108
+  orig: 48, 110
+  offset: 1, 1
+  index: -1
+SLOTS
+  rotate: true
+  xy: 1470, 194
+  size: 181, 80
+  orig: 186, 85
+  offset: 3, 3
+  index: -1
+光
+  rotate: true
+  xy: 1405, 119
+  size: 32, 31
+  orig: 41, 36
+  offset: 4, 3
+  index: -1
+光1
+  rotate: false
+  xy: 1405, 153
+  size: 32, 32
+  orig: 41, 36
+  offset: 5, 2
+  index: -1
+光3
+  rotate: true
+  xy: 1183, 131
+  size: 59, 56
+  orig: 72, 60
+  offset: 7, 3
+  index: -1
+光4
+  rotate: true
+  xy: 1266, 94
+  size: 59, 55
+  orig: 73, 60
+  offset: 7, 3
+  index: -1
+光5
+  rotate: false
+  xy: 1043, 213
+  size: 70, 79
+  orig: 80, 83
+  offset: 2, 2
+  index: -1
+光束
+  rotate: false
+  xy: 618, 269
+  size: 164, 106
+  orig: 166, 109
+  offset: 1, 2
+  index: -1
+图层 10
+  rotate: false
+  xy: 1323, 134
+  size: 15, 19
+  orig: 17, 21
+  offset: 1, 1
+  index: -1
+图层 11
+  rotate: false
+  xy: 1162, 294
+  size: 103, 81
+  orig: 105, 83
+  offset: 1, 1
+  index: -1
+图层 12
+  rotate: true
+  xy: 1238, 253
+  size: 39, 27
+  orig: 41, 29
+  offset: 1, 1
+  index: -1
+图层 13
+  rotate: true
+  xy: 1241, 115
+  size: 76, 23
+  orig: 78, 25
+  offset: 1, 1
+  index: -1
+图层 2
+  rotate: false
+  xy: 1267, 297
+  size: 201, 78
+  orig: 205, 82
+  offset: 2, 2
+  index: -1
+图层 3
+  rotate: true
+  xy: 1358, 98
+  size: 87, 45
+  orig: 90, 49
+  offset: 1, 2
+  index: -1
+图层 4
+  rotate: true
+  xy: 1238, 222
+  size: 29, 27
+  orig: 31, 29
+  offset: 1, 1
+  index: -1
+图层 5
+  rotate: true
+  xy: 1267, 155
+  size: 140, 73
+  orig: 143, 75
+  offset: 2, 1
+  index: -1
+图层 5 拷贝 2
+  rotate: true
+  xy: 2, 2
+  size: 373, 418
+  orig: 375, 420
+  offset: 1, 1
+  index: -1
+图层 6
+  rotate: false
+  xy: 1523, 162
+  size: 21, 30
+  orig: 23, 32
+  offset: 1, 1
+  index: -1
+图层 7
+  rotate: false
+  xy: 1115, 176
+  size: 66, 116
+  orig: 75, 119
+  offset: 1, 1
+  index: -1
+图层 8
+  rotate: true
+  xy: 1342, 192
+  size: 103, 14
+  orig: 105, 16
+  offset: 1, 1
+  index: -1
+图层 9
+  rotate: true
+  xy: 1454, 141
+  size: 51, 67
+  orig: 53, 69
+  offset: 1, 1
+  index: -1
+星星
+  rotate: false
+  xy: 1454, 275
+  size: 5, 8
+  orig: 7, 10
+  offset: 1, 1
+  index: -1
+星星2
+  rotate: false
+  xy: 1454, 285
+  size: 7, 10
+  orig: 9, 12
+  offset: 1, 1
+  index: -1
+水果1
+  rotate: true
+  xy: 2, 377
+  size: 68, 1708
+  orig: 68, 1708
+  offset: 0, 0
+  index: -1
+矩形 1
+  rotate: false
+  xy: 422, 237
+  size: 194, 138
+  orig: 196, 140
+  offset: 1, 1
+  index: -1
+矩形 2
+  rotate: false
+  xy: 1183, 192
+  size: 53, 100
+  orig: 55, 102
+  offset: 1, 1
+  index: -1
+矩形 4 拷贝
+  rotate: true
+  xy: 1043, 294
+  size: 81, 117
+  orig: 83, 119
+  offset: 1, 1
+  index: -1
+蓝光束
+  rotate: true
+  xy: 1342, 95
+  size: 95, 14
+  orig: 95, 14
+  offset: 0, 0
+  index: -1
+金币
+  rotate: true
+  xy: 1238, 193
+  size: 27, 21
+  orig: 27, 21
+  offset: 0, 0
+  index: -1
+黄光束
+  rotate: true
+  xy: 1323, 45
+  size: 87, 11
+  orig: 95, 14
+  offset: 6, 1
+  index: -1
+黑
+  rotate: false
+  xy: 784, 286
+  size: 257, 89
+  orig: 483, 520
+  offset: 116, 337
+  index: -1

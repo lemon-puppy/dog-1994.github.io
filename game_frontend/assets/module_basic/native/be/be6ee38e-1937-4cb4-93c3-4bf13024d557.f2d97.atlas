@@ -1,0 +1,48 @@
+
+ditutongguan_en.png
+size: 725,540
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+MAP COMPLETE
+  rotate: true
+  xy: 649, 86
+  size: 195, 74
+  orig: 195, 74
+  offset: 0, 0
+  index: -1
+shanshui2
+  rotate: false
+  xy: 649, 47
+  size: 27, 37
+  orig: 31, 42
+  offset: 2, 3
+  index: -1
+发光
+  rotate: true
+  xy: 2, 2
+  size: 536, 537
+  orig: 569, 569
+  offset: 17, 16
+  index: -1
+地图通关bg
+  rotate: true
+  xy: 541, 283
+  size: 255, 175
+  orig: 255, 175
+  offset: 0, 0
+  index: -1
+翅膀1
+  rotate: false
+  xy: 541, 170
+  size: 106, 111
+  orig: 109, 113
+  offset: 1, 1
+  index: -1
+翅膀2
+  rotate: false
+  xy: 541, 57
+  size: 106, 111
+  orig: 109, 113
+  offset: 2, 1
+  index: -1

@@ -1,0 +1,55 @@
+
+shengjijianzao.png
+size: 490,338
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+img_dfw_jztips
+  rotate: false
+  xy: 258, 5
+  size: 230, 99
+  orig: 235, 105
+  offset: 2, 3
+  index: -1
+img_dfw_sjtips
+  rotate: true
+  xy: 258, 106
+  size: 230, 99
+  orig: 236, 105
+  offset: 2, 3
+  index: -1
+三角形 1 拷贝
+  rotate: true
+  xy: 2, 160
+  size: 176, 254
+  orig: 176, 254
+  offset: 0, 0
+  index: -1
+建造 拷贝
+  rotate: true
+  xy: 160, 40
+  size: 118, 96
+  orig: 122, 100
+  offset: 2, 2
+  index: -1
+椭圆 3 拷贝
+  rotate: false
+  xy: 2, 2
+  size: 156, 156
+  orig: 156, 156
+  offset: 0, 0
+  index: -1
+椭圆 4
+  rotate: false
+  xy: 359, 210
+  size: 126, 126
+  orig: 134, 134
+  offset: 4, 4
+  index: -1
+矩形 25
+  rotate: true
+  xy: 359, 112
+  size: 96, 98
+  orig: 100, 102
+  offset: 2, 2
+  index: -1

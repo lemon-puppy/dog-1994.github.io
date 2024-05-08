@@ -1,0 +1,286 @@
+
+casino.png
+size: 1921,829
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CASINO
+  rotate: false
+  xy: 1060, 55
+  size: 218, 70
+  orig: 220, 72
+  offset: 1, 1
+  index: -1
+CASINO 拷贝 3
+  rotate: false
+  xy: 1280, 58
+  size: 215, 67
+  orig: 218, 69
+  offset: 1, 1
+  index: -1
+上紫
+  rotate: false
+  xy: 1708, 256
+  size: 198, 260
+  orig: 198, 260
+  offset: 0, 0
+  index: -1
+上紫2
+  rotate: false
+  xy: 1507, 255
+  size: 199, 261
+  orig: 199, 261
+  offset: 0, 0
+  index: -1
+图层 3
+  rotate: false
+  xy: 1507, 518
+  size: 290, 309
+  orig: 292, 311
+  offset: 1, 1
+  index: -1
+图层 7 拷贝 10
+  rotate: false
+  xy: 1885, 121
+  size: 20, 24
+  orig: 26, 29
+  offset: 4, 2
+  index: -1
+图层 7 拷贝 11
+  rotate: true
+  xy: 1137, 5
+  size: 20, 22
+  orig: 25, 27
+  offset: 4, 2
+  index: -1
+图层 7 拷贝 6
+  rotate: false
+  xy: 1893, 148
+  size: 26, 25
+  orig: 32, 31
+  offset: 2, 3
+  index: -1
+图层 7 拷贝 7
+  rotate: false
+  xy: 1866, 147
+  size: 25, 25
+  orig: 30, 33
+  offset: 3, 4
+  index: -1
+图层 7 拷贝 8
+  rotate: false
+  xy: 502, 15
+  size: 23, 24
+  orig: 30, 30
+  offset: 4, 2
+  index: -1
+图层 7 拷贝 9
+  rotate: true
+  xy: 1895, 537
+  size: 26, 24
+  orig: 32, 30
+  offset: 4, 3
+  index: -1
+圆角矩形 1 拷贝
+  rotate: true
+  xy: 265, 13
+  size: 26, 79
+  orig: 30, 87
+  offset: 2, 4
+  index: -1
+圆角矩形 1 拷贝 10
+  rotate: true
+  xy: 1142, 27
+  size: 26, 76
+  orig: 30, 82
+  offset: 2, 3
+  index: -1
+圆角矩形 1 拷贝 11
+  rotate: true
+  xy: 1297, 28
+  size: 28, 76
+  orig: 32, 82
+  offset: 2, 3
+  index: -1
+圆角矩形 1 拷贝 12
+  rotate: true
+  xy: 2, 2
+  size: 7, 82
+  orig: 9, 86
+  offset: 1, 1
+  index: -1
+圆角矩形 1 拷贝 13
+  rotate: true
+  xy: 1060, 46
+  size: 7, 80
+  orig: 9, 82
+  offset: 1, 1
+  index: -1
+圆角矩形 1 拷贝 3
+  rotate: false
+  xy: 1866, 174
+  size: 25, 80
+  orig: 29, 86
+  offset: 2, 3
+  index: -1
+圆角矩形 1 拷贝 4
+  rotate: false
+  xy: 1893, 175
+  size: 26, 79
+  orig: 30, 87
+  offset: 2, 4
+  index: -1
+圆角矩形 1 拷贝 5
+  rotate: true
+  xy: 1220, 27
+  size: 26, 75
+  orig: 30, 82
+  offset: 2, 3
+  index: -1
+圆角矩形 1 拷贝 6
+  rotate: true
+  xy: 1375, 30
+  size: 26, 75
+  orig: 30, 82
+  offset: 2, 4
+  index: -1
+圆角矩形 1 拷贝 7
+  rotate: true
+  xy: 1060, 18
+  size: 26, 75
+  orig: 30, 82
+  offset: 2, 4
+  index: -1
+圆角矩形 1 拷贝 8
+  rotate: true
+  xy: 346, 12
+  size: 27, 76
+  orig: 31, 82
+  offset: 2, 3
+  index: -1
+圆角矩形 1 拷贝 9
+  rotate: true
+  xy: 424, 12
+  size: 27, 76
+  orig: 31, 82
+  offset: 2, 3
+  index: -1
+字光
+  rotate: true
+  xy: 1799, 565
+  size: 262, 112
+  orig: 278, 128
+  offset: 8, 8
+  index: -1
+字灯
+  rotate: false
+  xy: 1507, 112
+  size: 206, 141
+  orig: 226, 161
+  offset: 10, 10
+  index: -1
+星星底
+  rotate: false
+  xy: 1799, 524
+  size: 94, 39
+  orig: 98, 46
+  offset: 2, 4
+  index: -1
+杆子1
+  rotate: false
+  xy: 1913, 734
+  size: 6, 37
+  orig: 8, 82
+  offset: 1, 44
+  index: -1
+杆子2
+  rotate: false
+  xy: 1913, 773
+  size: 6, 54
+  orig: 8, 95
+  offset: 1, 40
+  index: -1
+点点
+  rotate: true
+  xy: 2, 127
+  size: 700, 1503
+  orig: 700, 1503
+  offset: 0, 0
+  index: -1
+烟花1
+  rotate: false
+  xy: 1712, 8
+  size: 103, 98
+  orig: 103, 98
+  offset: 0, 0
+  index: -1
+烟花2
+  rotate: false
+  xy: 1605, 5
+  size: 105, 105
+  orig: 105, 105
+  offset: 0, 0
+  index: -1
+烟花3
+  rotate: false
+  xy: 1715, 108
+  size: 149, 146
+  orig: 149, 146
+  offset: 0, 0
+  index: -1
+筛子
+  rotate: false
+  xy: 1497, 8
+  size: 106, 102
+  orig: 110, 107
+  offset: 2, 2
+  index: -1
+筹码红光
+  rotate: false
+  xy: 1817, 8
+  size: 99, 98
+  orig: 126, 126
+  offset: 13, 14
+  index: -1
+筹码霓虹
+  rotate: true
+  xy: 1452, 28
+  size: 28, 32
+  orig: 31, 34
+  offset: 1, 1
+  index: -1
+紫下
+  rotate: true
+  xy: 265, 41
+  size: 84, 263
+  orig: 84, 263
+  offset: 0, 0
+  index: -1
+紫色光束
+  rotate: true
+  xy: 1866, 117
+  size: 28, 17
+  orig: 29, 17
+  offset: 0, 0
+  index: -1
+绿
+  rotate: true
+  xy: 795, 43
+  size: 82, 263
+  orig: 82, 263
+  offset: 0, 0
+  index: -1
+青
+  rotate: true
+  xy: 530, 42
+  size: 83, 263
+  orig: 83, 263
+  offset: 0, 0
+  index: -1
+青2
+  rotate: true
+  xy: 2, 11
+  size: 114, 261
+  orig: 114, 261
+  offset: 0, 0
+  index: -1

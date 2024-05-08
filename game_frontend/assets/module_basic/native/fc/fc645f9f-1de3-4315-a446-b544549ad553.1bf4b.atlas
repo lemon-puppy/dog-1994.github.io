@@ -1,0 +1,20 @@
+
+yaoshi.png
+size: 323,248
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiangluos
+  rotate: false
+  xy: 2, 2
+  size: 254, 244
+  orig: 254, 244
+  offset: 0, 0
+  index: -1
+yaoshi
+  rotate: true
+  xy: 258, 170
+  size: 76, 63
+  orig: 76, 64
+  offset: 0, 1
+  index: -1
