@@ -1,0 +1,27 @@
+
+yun1.png
+size: 1820,314
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+yuna1
+  rotate: false
+  xy: 1355, 77
+  size: 463, 235
+  orig: 475, 248
+  offset: 6, 8
+  index: -1
+yunb1
+  rotate: false
+  xy: 2, 33
+  size: 737, 279
+  orig: 744, 291
+  offset: 5, 6
+  index: -1
+yunb2
+  rotate: false
+  xy: 741, 2
+  size: 612, 310
+  orig: 621, 321
+  offset: 3, 5
+  index: -1

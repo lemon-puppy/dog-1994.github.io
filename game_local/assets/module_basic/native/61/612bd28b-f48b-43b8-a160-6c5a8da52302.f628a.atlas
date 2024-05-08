@@ -1,0 +1,97 @@
+
+jinbizhuan.png
+size: 220,168
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+c1.2
+  rotate: false
+  xy: 2, 88
+  size: 78, 78
+  orig: 78, 78
+  offset: 0, 0
+  index: -1
+c1.2.1
+  rotate: true
+  xy: 2, 29
+  size: 57, 46
+  orig: 80, 80
+  offset: 13, 17
+  index: -1
+c1.2.10
+  rotate: false
+  xy: 129, 52
+  size: 29, 56
+  orig: 80, 80
+  offset: 27, 12
+  index: -1
+c1.2.11
+  rotate: true
+  xy: 60, 12
+  size: 16, 56
+  orig: 80, 80
+  offset: 33, 12
+  index: -1
+c1.2.12
+  rotate: false
+  xy: 173, 3
+  size: 38, 54
+  orig: 80, 80
+  offset: 22, 13
+  index: -1
+c1.2.13
+  rotate: true
+  xy: 170, 113
+  size: 53, 48
+  orig: 80, 80
+  offset: 15, 16
+  index: -1
+c1.2.2
+  rotate: false
+  xy: 118, 2
+  size: 53, 48
+  orig: 80, 80
+  offset: 15, 16
+  index: -1
+c1.2.3
+  rotate: false
+  xy: 130, 112
+  size: 38, 54
+  orig: 80, 80
+  offset: 22, 13
+  index: -1
+c1.2.4
+  rotate: true
+  xy: 2, 10
+  size: 17, 56
+  orig: 80, 80
+  offset: 33, 12
+  index: -1
+c1.2.5
+  rotate: false
+  xy: 98, 52
+  size: 29, 56
+  orig: 80, 80
+  offset: 27, 12
+  index: -1
+c1.2.6
+  rotate: false
+  xy: 170, 59
+  size: 47, 52
+  orig: 80, 80
+  offset: 18, 14
+  index: -1
+c1.2.7
+  rotate: true
+  xy: 50, 30
+  size: 56, 46
+  orig: 80, 80
+  offset: 13, 17
+  index: -1
+c1.2.8
+  rotate: true
+  xy: 82, 110
+  size: 56, 46
+  orig: 80, 80
+  offset: 13, 17
+  index: -1

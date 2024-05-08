@@ -1,0 +1,62 @@
+
+baoxiangX.png
+size: 1152,269
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4x-quana_0000
+  rotate: false
+  xy: 558, 2
+  size: 182, 91
+  orig: 200, 100
+  offset: 6, 3
+  index: -1
+bxx1
+  rotate: true
+  xy: 846, 13
+  size: 254, 156
+  orig: 270, 170
+  offset: 12, 6
+  index: -1
+bxx2
+  rotate: false
+  xy: 558, 95
+  size: 286, 172
+  orig: 319, 194
+  offset: 0, 0
+  index: -1
+bxx3
+  rotate: false
+  xy: 254, 82
+  size: 302, 185
+  orig: 306, 192
+  offset: 3, 0
+  index: -1
+bxxfg1
+  rotate: false
+  xy: 254, 26
+  size: 211, 54
+  orig: 211, 54
+  offset: 0, 0
+  index: -1
+bxxfg2
+  rotate: false
+  xy: 467, 5
+  size: 69, 75
+  orig: 69, 75
+  offset: 0, 0
+  index: -1
+gmang11
+  rotate: false
+  xy: 2, 17
+  size: 250, 250
+  orig: 250, 251
+  offset: 0, 1
+  index: -1
+gmang22
+  rotate: true
+  xy: 1004, 11
+  size: 256, 146
+  orig: 256, 146
+  offset: 0, 0
+  index: -1

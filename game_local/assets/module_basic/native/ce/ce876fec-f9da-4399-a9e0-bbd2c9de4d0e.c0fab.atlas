@@ -1,0 +1,13 @@
+
+BTdianji.png
+size: 147,147
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bowen2
+  rotate: false
+  xy: 2, 2
+  size: 143, 143
+  orig: 153, 153
+  offset: 5, 5
+  index: -1

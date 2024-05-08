@@ -1,0 +1,118 @@
+
+cat1backpifu.png
+size: 1088,123
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body2
+  rotate: false
+  xy: 670, 55
+  size: 87, 66
+  orig: 87, 66
+  offset: 0, 0
+  index: -1
+head2
+  rotate: false
+  xy: 2, 2
+  size: 165, 119
+  orig: 165, 141
+  offset: 0, 0
+  index: -1
+jin/body2
+  rotate: false
+  xy: 759, 55
+  size: 87, 66
+  orig: 87, 66
+  offset: 0, 0
+  index: -1
+jin/head2
+  rotate: false
+  xy: 169, 2
+  size: 165, 119
+  orig: 165, 141
+  offset: 0, 0
+  index: -1
+jin/leave
+  rotate: false
+  xy: 1026, 73
+  size: 60, 48
+  orig: 60, 48
+  offset: 0, 0
+  index: -1
+jin/tail2
+  rotate: false
+  xy: 857, 9
+  size: 58, 44
+  orig: 58, 44
+  offset: 0, 0
+  index: -1
+leave
+  rotate: false
+  xy: 670, 4
+  size: 61, 49
+  orig: 61, 49
+  offset: 0, 0
+  index: -1
+tail2
+  rotate: false
+  xy: 917, 9
+  size: 58, 44
+  orig: 58, 44
+  offset: 0, 0
+  index: -1
+tong/body2
+  rotate: false
+  xy: 848, 55
+  size: 87, 66
+  orig: 87, 66
+  offset: 0, 0
+  index: -1
+tong/head2
+  rotate: false
+  xy: 336, 2
+  size: 165, 119
+  orig: 165, 141
+  offset: 0, 0
+  index: -1
+tong/leave
+  rotate: false
+  xy: 733, 5
+  size: 60, 48
+  orig: 60, 48
+  offset: 0, 0
+  index: -1
+tong/tail2
+  rotate: false
+  xy: 977, 9
+  size: 58, 44
+  orig: 58, 44
+  offset: 0, 0
+  index: -1
+yin/body2
+  rotate: false
+  xy: 937, 55
+  size: 87, 66
+  orig: 87, 66
+  offset: 0, 0
+  index: -1
+yin/head2
+  rotate: false
+  xy: 503, 2
+  size: 165, 119
+  orig: 165, 141
+  offset: 0, 0
+  index: -1
+yin/leave
+  rotate: false
+  xy: 795, 5
+  size: 60, 48
+  orig: 60, 48
+  offset: 0, 0
+  index: -1
+yin/tail2
+  rotate: true
+  xy: 1037, 13
+  size: 58, 44
+  orig: 58, 44
+  offset: 0, 0
+  index: -1
