@@ -1,0 +1,27 @@
+
+Narrow doors.png
+size: 119,122
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+窄门右
+  rotate: false
+  xy: 58, 7
+  size: 53, 113
+  orig: 53, 113
+  offset: 0, 0
+  index: -1
+窄门左
+  rotate: false
+  xy: 2, 7
+  size: 54, 113
+  orig: 54, 113
+  offset: 0, 0
+  index: -1
+黑竖
+  rotate: false
+  xy: 113, 2
+  size: 4, 118
+  orig: 4, 118
+  offset: 0, 0
+  index: -1
