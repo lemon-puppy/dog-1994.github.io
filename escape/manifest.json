@@ -4,7 +4,7 @@
     "start_url": ".",
     "id": "pwa_app_id",
     "display": "standalone",
-    "description": "escape game",
+    "description": "",
     "lang": "en",
     "dir": "auto",
     "theme_color": "#000000",
