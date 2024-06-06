@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
 
-<title>battle royale no espaço</title>
+  <title>escape</title>
 
   <!--http://www.html5rocks.com/en/mobile/mobifying/-->
   <meta name="viewport"
-        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=5"/>
 
   <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -38,40 +38,20 @@
   <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
 
   <link rel="stylesheet" type="text/css" href="style-mobile.25fc5.css"/>
-
-                <!-- 自定义css样式 -->
-                <link rel="stylesheet" type="text/css" href="web-load.css"/>
   <link rel="icon" href="favicon.8de18.ico"/>
   <link rel="manifest" href="manifest.json" />
 </head>
 <body>
-<canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0" style="visibility:hidden"></canvas>
-
-               <!-- 自定义内容开始 -->
-               <div id="zbw-web-logo">
-                 <div style="width: 50%;height: 100%;display: contents;">
-                   <!-- 图片 -->
-                   <img id="zbw-img" src="web-logo.png" alt="">
-                   <!-- 加载中进度 -->
-                   <div class="zbw-progress" >
-                     <div class="zbw-progress-label label" >游戏加载中...</div>
-                     <div class="zbw-progress-bar">
-                       <span style="width: 0%"></span>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-               <!-- 自定义内容结束 -->
-               
-<!-- 注释掉官方内容   <div id="splash">
+  <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+  <div id="splash">
     <div class="progress-bar stripes">
       <span style="width: 0%"></span>
     </div>
-  </div> -->
+  </div>
 
-<script src="src/settings.aff9c.js" charset="utf-8"></script>
+<script src="src/settings.d029c.js" charset="utf-8"></script>
 
-<script src="main.0b50e.js" charset="utf-8"></script>
+<script src="main.3453b.js" charset="utf-8"></script>
 <script>
   if ('serviceWorker' in window.navigator) {
     let refreshing = false;
@@ -97,8 +77,8 @@
     }
 
     var debug = window._CCSettings.debug;
-//     var splash = document.getElementById('splash');
-//     splash.style.display = 'block';
+    var splash = document.getElementById('splash');
+    splash.style.display = 'block';
 
     function loadScript (moduleName, cb) {
       function scriptLoaded () {
@@ -113,7 +93,7 @@
       document.body.appendChild(domScript);
     }
 
-    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.a8478.js', function () {
+    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.f632e.js', function () {
       if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
         loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
       }
