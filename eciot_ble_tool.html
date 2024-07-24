@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>易加蓝牙助手</title>
+    <meta name="description" content="https://eciot.com/">
+    <style>
+        .title{
+            margin-bottom: 5px;
+        }
+        .button {
+            margin-top: 10px;
+        }
+
+        .received-control {
+            margin-top: 10px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .received-title {
+            flex: 1;
+        }
+
+        .received-item {
+            margin-left: 10px;
+        }
+
+        #received-content {
+            width: 300px;
+            height: 200px;
+            background-color: #F5F5F5;
+            margin-top: 5px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            word-break: break-all;
+            border-style: solid;
+            font-size: 12px;
+        }
+
+        .send-control {
+            margin-top: 10px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .send-title {
+            flex: 1;
+        }
+
+        .send-item {
+            margin-left: 10px;
+        }
+
+        #textarea {
+            resize: none;
+            width: 300px;
+            height: 100px;
+            margin-top: 5px;
+            background-color: #F5F5F5;
+        }
+
+        .btSend {
+            margin-top: 5px;
+            width: 100px;
+        }
+
+        .logo {
+            margin-top: 5px;
+            font-size: 13px;
+            color: #909399;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">易加蓝牙助手</div>
+    <div>
+        <span>蓝牙设备：</span>
+        <span id="device">未选择</span>
+    </div>
+    <div>
+        <span>蓝牙状态：</span>
+        <span id="status">未连接</span>
+    </div>
+    <div><button onclick='ecBLESearch()' class="button">搜索蓝牙设备</button></div>
+    <div><button onclick='ecBLEConnect()' class="button" disabled id="bt-connect">连接蓝牙设备</button></div>
+    <div><button onclick='ecBLEDisconnect()' class="button" disabled id="bt-disconnect">断开蓝牙设备</button></div>
+    <div class="received-control">
+        <span class="received-title">数据接收：</span>
+        <button onclick="btClear()" disabled id="bt-clear">清空</button>
+        <input type="checkbox" class="received-item" id="checkbox-scroll" checked disabled> 滚动
+        <input type="checkbox" class="received-item" id="checkbox-received-hex" disabled> Hex
+    </div>
+    <div id="received-content"></div>
+    <div class="send-control">
+        <span class="send-title">数据发送：</span>
+        <input type="checkbox" class="send-item" id="checkbox-send-hex" disabled>Hex
+    </div>
+    <div><textarea id="textarea" placeholder="https://eciot.com/" disabled></textarea></div>
+    <div><button onclick='ecBLESend()' class="btSend" disabled id="bt-send">发送</button></div>
+    <div class="logo">技术支持 https://eciot.com/</div>
+
+    <script>
+
+        let ecDevice = {}
+        let ecCharacteristicWrite = {}
+        const ecBLESearch = async () => {
+            try {
+                const device = await navigator.bluetooth.requestDevice({
+                    acceptAllDevices: true,
+                    optionalServices: [0xfff0],
+                });
+                console.log('Device found:', device);
+                ecDevice = device
+                ecDevice.addEventListener('gattserverdisconnected', onDisconnected);
+                document.getElementById("device").innerText = ecDevice.name
+                document.getElementById("bt-connect").disabled = ""
+                document.getElementById("bt-disconnect").disabled = ""
+            } catch (error) {
+                console.log('ecBLESearch Error:', error);
+            }
+        }
+        const ecBLEConnect = async () => {
+            try {
+                const gattServer = await ecDevice.gatt.connect();
+                console.log('Connected to GATT service:', gattServer.device.name);
+                const service = await gattServer.getPrimaryService(0xfff0);
+                console.log('Found service:', service.uuid);
+                ecCharacteristicWrite = await service.getCharacteristic(0xfff2);
+                const characteristic = await service.getCharacteristic(0xfff1);
+                console.log('Found characteristic:', characteristic.uuid);
+                await characteristic.startNotifications();
+                characteristic.addEventListener('characteristicvaluechanged', async (event) => {
+                    console.log('characteristicvaluechanged:', event.target.value.buffer);
+                    characteristicValueChange(event.target.value.buffer)
+                });
+                document.getElementById("status").innerText = '已连接'
+                document.getElementById("bt-clear").disabled = ""
+                document.getElementById("checkbox-scroll").disabled = ""
+                document.getElementById("checkbox-received-hex").disabled = ""
+                document.getElementById("checkbox-send-hex").disabled = ""
+                document.getElementById("textarea").disabled = ""
+                document.getElementById("bt-send").disabled = ""
+                alert('蓝牙连接成功')
+            } catch (error) {
+                console.log('ecBLEConnect Error:', error);
+            }
+        }
+        const ecBLEDisconnect = async () => {
+            try {
+                await ecDevice.gatt.disconnect();
+                document.getElementById("status").innerText = '未连接'
+                document.getElementById("bt-clear").disabled = "disabled"
+                document.getElementById("checkbox-scroll").disabled = "disabled"
+                document.getElementById("checkbox-received-hex").disabled = "disabled"
+                document.getElementById("checkbox-send-hex").disabled = "disabled"
+                document.getElementById("textarea").disabled = "disabled"
+                document.getElementById("bt-send").disabled = "disabled"
+            } catch (error) {
+                console.log('ecBLEDisconnect Error:', error);
+            }
+        }
+        const ecBLEWrite = async (str, isHex) => {
+            try {
+                if (str.length === 0) return
+                if (isHex) {
+                    let buffer = new ArrayBuffer(str.length / 2)
+                    let x = new Uint8Array(buffer)
+                    for (let i = 0; i < x.length; i++) {
+                        x[i] = parseInt(str.substr(2 * i, 2), 16)
+                    }
+                    await ecCharacteristicWrite.writeValueWithoutResponse(buffer)
+                } else {
+                    await ecCharacteristicWrite.writeValueWithoutResponse(new Uint8Array(strToUtf8Bytes(str)))
+                }
+            } catch (error) {
+                console.log('ecBLEWrite Error:', error);
+            }
+        }
+
+        const btClear = () => {
+            document.getElementById("received-content").innerHTML = "";
+        }
+
+        const onDisconnected = async () => {
+            document.getElementById("status").innerText = '未连接'
+            document.getElementById("bt-clear").disabled = "disabled"
+            document.getElementById("checkbox-scroll").disabled = "disabled"
+            document.getElementById("checkbox-received-hex").disabled = "disabled"
+            document.getElementById("checkbox-send-hex").disabled = "disabled"
+            document.getElementById("textarea").disabled = "disabled"
+            document.getElementById("bt-send").disabled = "disabled"
+            alert("Disconnected")
+        }
+        const characteristicValueChange = (buffer) => {
+            let x = new Uint8Array(buffer)
+            let str = utf8BytesToStr(x)
+            console.log("str", str)
+            let strHex = ''
+            for (let i = 0; i < x.length; i++) {
+                strHex =
+                    strHex + ' ' + x[i].toString(16).padStart(2, '0').toUpperCase()
+            }
+            console.log("strHex", strHex)
+
+            let div = document.createElement('div');
+            if (document.getElementById("checkbox-received-hex").checked) {
+                div.innerText = dateFormat('[hh:mm:ss,S]: ', new Date()) + strHex;
+            } else {
+                div.innerText = dateFormat('[hh:mm:ss,S]: ', new Date()) + str;
+            }
+            let receivedContent = document.getElementById("received-content")
+            receivedContent.appendChild(div)
+
+            if (document.getElementById("checkbox-scroll").checked) {
+                receivedContent.scrollTop = receivedContent.scrollHeight
+            }
+        }
+        const ecBLESend = async () => {
+            let data = document.getElementById("textarea").value
+
+            if (document.getElementById("checkbox-send-hex").checked) {
+                data = data
+                    .replace(/\s*/g, '')
+                    .replace(/\n/g, '')
+                    .replace(/\r/g, '')
+                if (data.length === 0) {
+                    alert('请输入要发送的数据')
+                    return
+                }
+                if (data.length % 2 != 0) {
+                    alert('数据长度只能是双数')
+                    return
+                }
+                if (data.length > 488) {
+                    alert('最多只能发送244字节')
+                    return
+                }
+                if (!new RegExp('^[0-9a-fA-F]*$').test(data)) {
+                    alert('数据格式错误，只能是0-9,a-f,A-F')
+                    return
+                }
+                await ecBLEWrite(data, true)
+            }
+            else {
+                if (data.length === 0) {
+                    alert('请输入要发送的数据')
+                    return
+                }
+                if (data.length > 244) {
+                    alert('最多只能发送244字节')
+                    return
+                }
+                await ecBLEWrite(data, false)
+            }
+        }
+
+        const dateFormat = (fmt, date) => {
+            var o = {
+                'M+': date.getMonth() + 1, //月份
+                'd+': date.getDate(), //日
+                'h+': date.getHours(), //小时
+                'm+': date.getMinutes(), //分
+                's+': date.getSeconds(), //秒
+                'q+': Math.floor((date.getMonth() + 3) / 3), //季度
+                S: date.getMilliseconds(), //毫秒
+            }
+            if (/(y+)/.test(fmt))
+                fmt = fmt.replace(
+                    RegExp.$1,
+                    (date.getFullYear() + '').substr(4 - RegExp.$1.length)
+                )
+            for (var k in o)
+                if (new RegExp('(' + k + ')').test(fmt)) {
+                    // console.log(RegExp.$1.length)
+                    // console.log(o[k])
+                    fmt = fmt.replace(
+                        RegExp.$1,
+                        RegExp.$1.length == 1
+                            ? (o[k] + '').padStart(3, '0')
+                            : ('00' + o[k]).substr(('' + o[k]).length)
+                    )
+                }
+            return fmt
+        }
+        const utf8BytesToStr = utf8Bytes => {
+            let unicodeStr = ''
+            for (let pos = 0; pos < utf8Bytes.length;) {
+                let flag = utf8Bytes[pos]
+                let unicode = 0
+                if (flag >>> 7 === 0) {
+                    unicodeStr += String.fromCharCode(utf8Bytes[pos])
+                    pos += 1
+                }
+                // else if ((flag & 0xFC) === 0xFC) {
+                //     unicode = (utf8Bytes[pos] & 0x3) << 30
+                //     unicode |= (utf8Bytes[pos + 1] & 0x3F) << 24
+                //     unicode |= (utf8Bytes[pos + 2] & 0x3F) << 18
+                //     unicode |= (utf8Bytes[pos + 3] & 0x3F) << 12
+                //     unicode |= (utf8Bytes[pos + 4] & 0x3F) << 6
+                //     unicode |= (utf8Bytes[pos + 5] & 0x3F)
+                //     unicodeStr += String.fromCharCode(unicode)
+                //     pos += 6
+                // }
+                // else if ((flag & 0xF8) === 0xF8) {
+                //     unicode = (utf8Bytes[pos] & 0x7) << 24
+                //     unicode |= (utf8Bytes[pos + 1] & 0x3F) << 18
+                //     unicode |= (utf8Bytes[pos + 2] & 0x3F) << 12
+                //     unicode |= (utf8Bytes[pos + 3] & 0x3F) << 6
+                //     unicode |= (utf8Bytes[pos + 4] & 0x3F)
+                //     unicodeStr += String.fromCharCode(unicode)
+                //     pos += 5
+                // }
+                else if ((flag & 0xf0) === 0xf0) {
+                    unicode = (utf8Bytes[pos] & 0xf) << 18
+                    unicode |= (utf8Bytes[pos + 1] & 0x3f) << 12
+                    unicode |= (utf8Bytes[pos + 2] & 0x3f) << 6
+                    unicode |= utf8Bytes[pos + 3] & 0x3f
+                    unicodeStr += String.fromCharCode(unicode)
+                    pos += 4
+                } else if ((flag & 0xe0) === 0xe0) {
+                    unicode = (utf8Bytes[pos] & 0x1f) << 12
+                    unicode |= (utf8Bytes[pos + 1] & 0x3f) << 6
+                    unicode |= utf8Bytes[pos + 2] & 0x3f
+                    unicodeStr += String.fromCharCode(unicode)
+                    pos += 3
+                } else if ((flag & 0xc0) === 0xc0) {
+                    //110
+                    unicode = (utf8Bytes[pos] & 0x3f) << 6
+                    unicode |= utf8Bytes[pos + 1] & 0x3f
+                    unicodeStr += String.fromCharCode(unicode)
+                    pos += 2
+                } else {
+                    unicodeStr += String.fromCharCode(utf8Bytes[pos])
+                    pos += 1
+                }
+            }
+            return unicodeStr
+        }
+        const strToUtf8Bytes = str => {
+            let bytes = []
+            for (let i = 0; i < str.length; ++i) {
+                let code = str.charCodeAt(i)
+                if (code >= 0x10000 && code <= 0x10ffff) {
+                    bytes.push((code >> 18) | 0xf0) // 第一个字节
+                    bytes.push(((code >> 12) & 0x3f) | 0x80)
+                    bytes.push(((code >> 6) & 0x3f) | 0x80)
+                    bytes.push((code & 0x3f) | 0x80)
+                } else if (code >= 0x800 && code <= 0xffff) {
+                    bytes.push((code >> 12) | 0xe0)
+                    bytes.push(((code >> 6) & 0x3f) | 0x80)
+                    bytes.push((code & 0x3f) | 0x80)
+                } else if (code >= 0x80 && code <= 0x7ff) {
+                    bytes.push((code >> 6) | 0xc0)
+                    bytes.push((code & 0x3f) | 0x80)
+                } else {
+                    bytes.push(code)
+                }
+            }
+            return bytes
+        }
+
+    </script>
+</body>
+
+</html>
