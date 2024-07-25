@@ -113,7 +113,7 @@
         let ecCharacteristicWrite = {}
         const ecBLESearch = async () => {
             try {
-                const device = await navigator.bluetooth.requestDevice({
+                const device = await window.navigator.bluetooth.requestDevice({
                     acceptAllDevices: true,
                     optionalServices: [0xfff0],
                 });
