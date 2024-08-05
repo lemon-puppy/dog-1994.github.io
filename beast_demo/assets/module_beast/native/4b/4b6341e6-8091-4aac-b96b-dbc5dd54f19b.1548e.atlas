@@ -1,0 +1,69 @@
+
+神奇兽.png
+size: 248,211
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gaotou
+  rotate: false
+  xy: 149, 112
+  size: 97, 97
+  orig: 97, 97
+  offset: 0, 0
+  index: -1
+jiao
+  rotate: false
+  xy: 98, 6
+  size: 54, 54
+  orig: 54, 54
+  offset: 0, 0
+  index: -1
+shouR
+  rotate: true
+  xy: 2, 2
+  size: 58, 94
+  orig: 58, 94
+  offset: 0, 0
+  index: -1
+texiao
+  rotate: false
+  xy: 183, 48
+  size: 45, 37
+  orig: 45, 37
+  offset: 0, 0
+  index: -1
+yanj
+  rotate: true
+  xy: 149, 74
+  size: 11, 32
+  orig: 11, 32
+  offset: 0, 0
+  index: -1
+zuiba
+  rotate: true
+  xy: 154, 12
+  size: 60, 25
+  orig: 61, 25
+  offset: 0, 0
+  index: -1
+图层 28
+  rotate: false
+  xy: 2, 62
+  size: 145, 147
+  orig: 145, 147
+  offset: 0, 0
+  index: -1
+椭圆 3
+  rotate: true
+  xy: 181, 13
+  size: 33, 50
+  orig: 33, 50
+  offset: 0, 0
+  index: -1
+椭圆 4
+  rotate: false
+  xy: 149, 87
+  size: 92, 23
+  orig: 94, 25
+  offset: 1, 1
+  index: -1
