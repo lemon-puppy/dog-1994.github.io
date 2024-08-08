@@ -8,7 +8,6 @@
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"></script>
     <script>
         var Terminal = {
             // 辨别移动终端类型
@@ -25,12 +24,16 @@
             }(),
         }
 
-        async function getUinqueId() {
-            const fp = await FingerprintJS.load();
-            const result = await fp.get();
-            const visitorId = result.visitorId;
-            console.log(visitorId);
-            alert(visitorId);
+        function generateDeviceFingerprint() {
+            const userAgent = navigator.userAgent;
+            const screenResolution = `${screen.width}x${screen.height}`;
+            const platform = navigator.platform;
+            const deviceInfo = `${userAgent}-${screenResolution}-${platform}`;
+
+            return crypto.subtle.digest("SHA-256", new TextEncoder().encode(deviceInfo)).then(hashBuffer => {
+                const hashArray = Array.from(new Uint8Array(hashBuffer));
+                return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            });
         }
 
         function getOS() {
@@ -73,7 +76,10 @@
         }
 
         function redirectToDownload() {
-            getUinqueId();
+            generateDeviceFingerprint().then(fingerprint => {
+                console.log(fingerprint); // 唯一标识
+                alert(fingerprint);
+            });
             const os = getOS();
             const language = getLanguage();
             const { ref } = getQueryParams();
