@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Redirect</title>
+    <title>Download</title>
 </head>
 
 <body>
@@ -37,14 +37,6 @@
         }
 
         function getOS() {
-            // const userAgent = window.navigator.userAgent;
-            // if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-            //     return 'iOS';
-            // } else if (/Android/.test(userAgent)) {
-            //     return 'Android';
-            // } else {
-            //     return 'Other';
-            // }
             if (Terminal.platform.android) {
                 return 'Android';
             } else if (Terminal.platform.iPhone) {
@@ -76,10 +68,6 @@
         }
 
         function redirectToDownload() {
-            generateDeviceFingerprint().then(fingerprint => {
-                console.log(fingerprint); // 唯一标识
-                alert(fingerprint);
-            });
             const os = getOS();
             const language = getLanguage();
             const { ref } = getQueryParams();
@@ -104,23 +92,23 @@
 
             const deepLinks = {
                 'iOS': 'yourapp://yourapp_path',
-                'Android': 'intent://yourapp_path#Intent;scheme=yourapp;package=com.yourapp;end'
+                'Android': `myapp://spacebattleroyale?ref=${11111}`
             };
 
             const downloadLink = downloadLinks[os][language];
             const deepLink = deepLinks[os];
 
-            // if (os === 'iOS' || os === 'Android') {
-            //     // 尝试打开应用
-            //     window.location.href = deepLink;
+            if (os === 'iOS' || os === 'Android') {
+                // 尝试打开应用
+                window.location.href = deepLink;
 
-            //     // 如果应用未安装，重定向到下载链接
-            //     setTimeout(() => {
-            //         window.location.href = downloadLink;
-            //     }, 2500); // 2.5秒后跳转
-            // } else {
-            //     window.location.href = downloadLink;
-            // }
+                // 如果应用未安装，重定向到下载链接
+                setTimeout(() => {
+                    window.location.href = downloadLink;
+                }, 2500); // 2.5秒后跳转
+            } else {
+                window.location.href = downloadLink;
+            }
         }
 
         redirectToDownload();
