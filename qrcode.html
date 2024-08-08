@@ -27,17 +27,26 @@
             }
         }
 
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                ref: params.get('ref'),
+            };
+        }
+
         function redirectToDownload() {
             const os = getOS();
             const language = getLanguage();
+            const { ref } = getQueryParams();
+
             const downloadLinks = {
                 'iOS': {
                     'en': 'https://appstore.com/yourapp',
                     'zh': 'https://appstore.com/yourapp_zh'
                 },
                 'Android': {
-                    'en': 'https://playstore.com/yourapp',
-                    'zh': 'https://playstore.com/yourapp_zh'
+                    'en': 'https://space-battle-royale.com/en',
+                    'zh': 'https://space-battle-royale.com/pt'
                 },
                 'Other': {
                     'en': 'https://yourdomain.com/yourapp',
@@ -45,8 +54,25 @@
                 }
             };
 
+            const deepLinks = {
+                'iOS': 'yourapp://yourapp_path',
+                'Android': 'intent://yourapp_path#Intent;scheme=yourapp;package=com.yourapp;end'
+            };
+
             const downloadLink = downloadLinks[os][language];
-            window.location.href = downloadLink;
+            const deepLink = deepLinks[os];
+
+            if (os === 'iOS' || os === 'Android') {
+                // 尝试打开应用
+                window.location.href = deepLink;
+
+                // 如果应用未安装，重定向到下载链接
+                setTimeout(() => {
+                    window.location.href = downloadLink;
+                }, 2500); // 2.5秒后跳转
+            } else {
+                window.location.href = downloadLink;
+            }
         }
 
         redirectToDownload();
