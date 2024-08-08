@@ -69,6 +69,7 @@
             const os = getOS();
             const language = getLanguage();
             const { ref } = getQueryParams();
+            localStorage.setItem('inviteCode',ref);
             const downloadLinks = {
                 'iOS': {
                     'en': 'https://appstore.com/yourapp',
@@ -96,17 +97,17 @@
             const downloadLink = downloadLinks[os][language];
             const deepLink = deepLinks[os];
 
-            if (os === 'iOS' || os === 'Android') {
-                // 尝试打开应用
-                window.location.href = deepLink;
+            // if (os === 'iOS' || os === 'Android') {
+            //     // 尝试打开应用
+            //     window.location.href = deepLink;
 
-                // 如果应用未安装，重定向到下载链接
-                setTimeout(() => {
-                    window.location.href = downloadLink;
-                }, 2500); // 2.5秒后跳转
-            } else {
-                window.location.href = downloadLink;
-            }
+            //     // 如果应用未安装，重定向到下载链接
+            //     setTimeout(() => {
+            //         window.location.href = downloadLink;
+            //     }, 2500); // 2.5秒后跳转
+            // } else {
+            //     window.location.href = downloadLink;
+            // }
         }
 
         redirectToDownload();
