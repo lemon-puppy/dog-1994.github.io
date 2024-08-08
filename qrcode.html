@@ -36,8 +36,10 @@
 
         function redirectToDownload() {
             const os = getOS();
+            confirm(os);
             const language = getLanguage();
             const { ref } = getQueryParams();
+            alert(language+""+ref);
 
             const downloadLinks = {
                 'iOS': {
