@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Redirect</title>
+</head>
+<body>
+    <script>
+        function getOS() {
+            const userAgent = window.navigator.userAgent;
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                return 'iOS';
+            } else if (/Android/.test(userAgent)) {
+                return 'Android';
+            } else {
+                return 'Other';
+            }
+        }
+
+        function getLanguage() {
+            const language = navigator.language || navigator.userLanguage;
+            if (language.startsWith('zh')) {
+                return 'zh';
+            } else {
+                return 'en';
+            }
+        }
+
+        function redirectToDownload() {
+            const os = getOS();
+            const language = getLanguage();
+            const downloadLinks = {
+                'iOS': {
+                    'en': 'https://appstore.com/yourapp',
+                    'zh': 'https://appstore.com/yourapp_zh'
+                },
+                'Android': {
+                    'en': 'https://playstore.com/yourapp',
+                    'zh': 'https://playstore.com/yourapp_zh'
+                },
+                'Other': {
+                    'en': 'https://yourdomain.com/yourapp',
+                    'zh': 'https://yourdomain.com/yourapp_zh'
+                }
+            };
+
+            const downloadLink = downloadLinks[os][language];
+            window.location.href = downloadLink;
+        }
+
+        redirectToDownload();
+    </script>
+</body>
+</html>
