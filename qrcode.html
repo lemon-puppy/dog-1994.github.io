@@ -8,8 +8,9 @@
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"></script>
     <script>
-         var Terminal = {
+        var Terminal = {
             // 辨别移动终端类型
             platform: function () {
                 var u = navigator.userAgent, app = navigator.appVersion;
@@ -24,6 +25,13 @@
             }(),
         }
 
+        async function getUinqueId() {
+            const fp = await FingerprintJS.load();
+            const result = await fp.get();
+            const visitorId = result.visitorId;
+            console.log(visitorId);
+            alert(visitorId);
+        }
 
         function getOS() {
             // const userAgent = window.navigator.userAgent;
@@ -34,19 +42,18 @@
             // } else {
             //     return 'Other';
             // }
-            if(Terminal.platform.android){
+            if (Terminal.platform.android) {
                 return 'Android';
-            }else if(Terminal.platform.iPhone){
+            } else if (Terminal.platform.iPhone) {
                 return 'iOS'
-            }else{
+            } else {
                 return 'Other'
             }
         }
 
-       
+
         function getLanguage() {
             const language = navigator.language || navigator.userLanguage || navigator.browserLanguage;
-            console.log(language);
             if (language.startsWith('zh')) {
                 return 'zh';
             } else if (language.startsWith('en')) {
@@ -66,11 +73,10 @@
         }
 
         function redirectToDownload() {
+            getUinqueId();
             const os = getOS();
             const language = getLanguage();
             const { ref } = getQueryParams();
-            localStorage.setItem('inviteCode',ref);
-            alert(ref);
             const downloadLinks = {
                 'iOS': {
                     'en': 'https://appstore.com/yourapp',
