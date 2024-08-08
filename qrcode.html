@@ -9,6 +9,8 @@
     <script>
         function getOS() {
             const userAgent = window.navigator.userAgent;
+            console.log(userAgent);
+            alert(userAgent);
             if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 return 'iOS';
             } else if (/Android/.test(userAgent)) {
@@ -19,7 +21,8 @@
         }
 
         function getLanguage() {
-            const language = navigator.language || navigator.userLanguage;
+            const language = navigator.language || navigator.userLanguage || navigator.browserLanguage;
+            console.log(language);
             if (language.startsWith('zh')) {
                 return 'zh';
             } else {
@@ -36,10 +39,8 @@
 
         function redirectToDownload() {
             const os = getOS();
-            confirm(os);
             const language = getLanguage();
             const { ref } = getQueryParams();
-            alert(language+""+ref);
 
             const downloadLinks = {
                 'iOS': {
@@ -64,17 +65,17 @@
             const downloadLink = downloadLinks[os][language];
             const deepLink = deepLinks[os];
 
-            if (os === 'iOS' || os === 'Android') {
-                // 尝试打开应用
-                window.location.href = deepLink;
+            // if (os === 'iOS' || os === 'Android') {
+            //     // 尝试打开应用
+            //     window.location.href = deepLink;
 
-                // 如果应用未安装，重定向到下载链接
-                setTimeout(() => {
-                    window.location.href = downloadLink;
-                }, 2500); // 2.5秒后跳转
-            } else {
-                window.location.href = downloadLink;
-            }
+            //     // 如果应用未安装，重定向到下载链接
+            //     setTimeout(() => {
+            //         window.location.href = downloadLink;
+            //     }, 2500); // 2.5秒后跳转
+            // } else {
+            //     window.location.href = downloadLink;
+            // }
         }
 
         redirectToDownload();
