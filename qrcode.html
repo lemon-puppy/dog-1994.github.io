@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,8 +25,12 @@
             console.log(language);
             if (language.startsWith('zh')) {
                 return 'zh';
-            } else {
+            } else if(language.startsWith('en')){
                 return 'en';
+            } else if(language.startWith('pt')){
+                return 'pt'
+            } else if(language.startWith('es')){
+                return 'es';
             }
         }
 
@@ -81,5 +85,83 @@
 
         redirectToDownload();
     </script>
+</body>
+</html> -->
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>手机APP下载页面：根据终端辨别下载地址</title>
+    <script type="text/javascript">
+        // 获取终端的相关信息
+        var Terminal = {
+            // 辨别移动终端类型
+            platform : function(){
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {
+                    // android终端或者uc浏览器
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+                    // 是否为iPhone或者QQHD浏览器
+                    iPhone: u.indexOf('iPhone') > -1 ,
+                    // 是否iPad
+                    iPad: u.indexOf('iPad') > -1
+                };
+            }(),
+        }
+ 
+        function getLanguage() {
+            const language = navigator.language || navigator.userLanguage || navigator.browserLanguage;
+            console.log(language);
+            if (language.startsWith('zh')) {
+                return 'zh';
+            } else if(language.startsWith('en')){
+                return 'en';
+            } else if(language.startWith('pt')){
+                return 'pt'
+            } else if(language.startWith('es')){
+                return 'es';
+            }
+        }
+        let lan = getLanguage();
+        // 根据不同的终端，跳转到不同的地址
+        var theUrl = 'https://space-battle-royale.com/en';
+        alert("android:"+Terminal.platform.android+" iphone:"+Terminal.platform.iPhone);
+        if(Terminal.platform.android){
+            switch(lan){
+                case 'en':
+                    theUrl = 'https://space-battle-royale.com/en';
+                    break;
+                case 'pt':
+                    theUrl = 'https://space-battle-royale.com/pt';
+                    break;
+                case 'es':
+                    theUrl = 'https://space-battle-royale.com/sp';
+                    break;
+                default:
+                    theUrl = 'https://space-battle-royale.com/en';
+            }
+        }else if(Terminal.platform.iPhone){
+            switch(lan){
+                case 'en':
+                    theUrl = 'https://space-battle-royale.com/en';
+                    break;
+                case 'pt':
+                    theUrl = 'https://space-battle-royale.com/pt';
+                    break;
+                case 'es':
+                    theUrl = 'https://space-battle-royale.com/sp';
+                    break;
+                default:
+                    theUrl = 'https://space-battle-royale.com/en';
+            }
+        }
+ 
+        location.href = theUrl;
+    </script>
+</head>
+<body>
+    <!--
+ 
+    -->
 </body>
 </html>
