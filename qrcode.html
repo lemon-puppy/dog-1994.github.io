@@ -46,14 +46,19 @@
             document.cookie = name + "=" + (value || "") + expires + "; path=/";
         }
 
-        function copyToClipboard(data) {
-            alert(data);
-            navigator.clipboard.writeText(data).then(function () {
-                console.log('Data copied to clipboard');
-            }, function (err) {
-                console.error('Failed to copy: ', err);
-            });
-        }
+        function copyToClip(contentText, callBack = null) {
+            if(contentText == null)return;
+            alert(contentText);
+            let inputEle = document.createElement("input");
+            inputEle.setAttribute('readonly', 'readonly');
+            inputEle.setAttribute("value", contentText);
+            document.body.appendChild(inputEle);
+            inputEle.select();
+            inputEle.setSelectionRange(0, contentText.length)
+            document.execCommand("copy");
+            document.body.removeChild(inputEle);
+            callBack && callBack();
+    };
 
         function getOS() {
             if (Terminal.platform.android) {
@@ -90,7 +95,7 @@
             const os = getOS();
             const language = getLanguage();
             const { ref } = getQueryParams();
-            copyToClipboard(ref)
+            copyToClip(ref);
             const downloadLinks = {
                 'iOS': {
                     'en': 'https://appstore.com/yourapp',
