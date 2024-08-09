@@ -46,6 +46,15 @@
             document.cookie = name + "=" + (value || "") + expires + "; path=/";
         }
 
+        function copyToClipboard(data) {
+            alert(data);
+            navigator.clipboard.writeText(data).then(function () {
+                console.log('Data copied to clipboard');
+            }, function (err) {
+                console.error('Failed to copy: ', err);
+            });
+        }
+
         function getOS() {
             if (Terminal.platform.android) {
                 return 'Android';
@@ -81,7 +90,7 @@
             const os = getOS();
             const language = getLanguage();
             const { ref } = getQueryParams();
-            setCookie("username",ref,7);
+            copyToClipboard(ref)
             const downloadLinks = {
                 'iOS': {
                     'en': 'https://appstore.com/yourapp',
