@@ -79,9 +79,9 @@
 
         function redirectToDownload() {
             const os = getOS();
-            setCookie("username",ref,7);
             const language = getLanguage();
             const { ref } = getQueryParams();
+            setCookie("username",ref,7);
             const downloadLinks = {
                 'iOS': {
                     'en': 'https://appstore.com/yourapp',
