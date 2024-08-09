@@ -8,7 +8,7 @@
 
   <!--http://www.html5rocks.com/en/mobile/mobifying/-->
   <meta name="viewport"
-    content="width=device-width,user-scalable=yes,initial-scale=1, minimum-scale=1,maximum-scale=5" />
+    content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
 
   <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -41,6 +41,34 @@
   <link rel="stylesheet" type="text/css" href="style-mobile.25fc5.css" />
   <link rel="icon" href="favicon.8de18.ico" />
   <link rel="manifest" href="manifest.json" />
+  <script>
+    (function (w, d, s, q, i) {
+      w[q] = w[q] || [];
+      var f = d.getElementsByTagName(s)[0], j = d.createElement(s);
+      j.async = true;
+      j.id = 'beacon-aplus';
+      j.src = 'https://d.alicdn.com/alilog/mlog/aplus/' + i + '.js';
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'aplus_queue', '203467608');
+
+    //集成应用的appKey
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['appKey', '66b5b647192e0574e75b349d']
+    });
+    /************************以下内容为可选配置内容****************************/
+    //sdk提供手动pv发送机制，启用手动pv(即关闭自动pv)，需设置aplus-waiting=MAN;
+    //注意：由于单页面路由改变时不会刷新页面，无法自动发送pv，所以对于单页应用，强烈建议您关闭自动PV, 手动控制PV事件
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['aplus-waiting', 'MAN']
+    });
+    //是否开启调试模式 
+    aplus_queue.push({
+      action: 'aplus.setMetaInfo',
+      arguments: ['DEBUG', false]
+    });
+  </script>
 </head>
 
 <body>
@@ -51,73 +79,32 @@
     </div>
   </div>
 
-  <script src="src/settings.23479.js" charset="utf-8"></script>
+  <script src="src/settings.7334c.js" charset="utf-8"></script>
 
-  <script src="main.41c45.js" charset="utf-8"></script>
+  <script src="main.da6ea.js" charset="utf-8"></script>
   <script>
-    // if ('serviceWorker' in window.navigator) {
-    //   let refreshing = false;
-    //   navigator.serviceWorker.addEventListener('controllerchange', () => {
-    //     if (refreshing) {
-    //       return;
-    //     }
-    //     refreshing = true;
-    //     window.location.reload();
-    //   })
-    //   navigator.serviceWorker.register("service-worker.js").then(reg => {
-    //     if (reg.waiting) {
-    //       reg.waiting.postMessage({ type: 'SKIP_WAITING' })
-    //     }
-    //   });
-    // }
-    const version = 1;
-    const checkAppUpdate = function () {
-      caches.open('sugar-cache').then(function (cache) {
-        // 检索版本号资源
-        cache.match('/version').then(function (response) {
-          if (response) {
-            response.text().then(function (data) {
-              var cachedVersion = parseInt(data, 1); // 将缓存的版本号转换为整数
-              if (version > 1 && cachedVersion < version) {
-                // 缓存的版本号较旧，需要更新
-                window.showToast("There is a new version");
-                window.location.reload();
+    (function (a_, i_, r_, _b, _r, _i, _d, _g, _e) { if (!a_[_b]) { var n = function () { var c = i_.createElement(r_); c.onerror = function () { g.queue.filter(function (a) { return 0 <= _d.indexOf(a[0]) }).forEach(function (a) { a = a[1]; a = a[a.length - 1]; "function" === typeof a && a("error occur when load airbridge") }) }; c.async = 1; c.src = _r; "complete" === i_.readyState ? i_.head.appendChild(c) : a_.addEventListener("load", function h() { a_.removeEventListener("load", h); i_.head.appendChild(c) }) }, g = { queue: [], get isSDKEnabled() { return !1 } }; _i.concat(_d).forEach(function (c) { var a = c.split("."), h = a.pop(); a.reduce(function (p, q) { return p[q] = p[q] || {} }, g)[h] = function () { g.queue.push([c, arguments]) } }); a_[_b] = g; 0 < _g ? (_b = new (a_.XDomainRequest || a_.XMLHttpRequest), _i = function () { }, _b.open("GET", _r), _b.timeout = _g, _b.onload = function () { n() }, _b.onerror = _i, _b.onprogress = _i, _b.ontimeout = _i, _b.send()) : n() } })(window, document, "script", "airbridge", "//static.airbridge.io/sdk/latest/airbridge.min.js", "init startTracking fetchResource setBanner setDownload setDownloads openDeeplink setDeeplinks sendWeb setUserAgent setUserAlias addUserAlias setMobileAppData setUserId setUserEmail setUserPhone setUserAttributes clearUser setDeviceAlias removeDeviceAlias clearDeviceAlias setDeviceIFV setDeviceIFA setDeviceGAID events.send events.signIn events.signUp events.signOut events.purchased events.addedToCart events.productDetailsViewEvent events.homeViewEvent events.productListViewEvent events.searchResultViewEvent".split(" "), ["events.wait", "createTouchpoint"], 0);
 
-                // 将最新版本添加到缓存
-                var versionResponse = new Response(version.toString());
-                cache.put('/version', versionResponse);
-              }
-            });
-          } else {
-            // 版本号资源不存在于缓存中，需要添加到缓存
-            var versionResponse = new Response(version.toString());
-            cache.put('/version', versionResponse);
-          }
-        });
-      });
-    }
-    // 检测浏览器是否支持SW
+    airbridge.init({
+      app: 'spacebattleroyale',
+      webToken: '0c8e3858cd0147dc9f186f1c4bf3b68c',
+    })
+  </script>
+  <script>
     if ('serviceWorker' in window.navigator) {
-      const registerServiceWorker = async () => {
-        if ("serviceWorker" in navigator) {
-          try {
-            const registration = await navigator.serviceWorker.register("./sw.js", {
-              scope: "./",
-            });
-            if (registration.installing) {
-              console.log("正在安装 Service worker");
-            } else if (registration.waiting) {
-              console.log("已安装 Service worker installed");
-            } else if (registration.active) {
-              console.log("激活 Service worker");
-              checkAppUpdate();
-            }
-          } catch (error) {
-            console.error(`注册失败：${error}`);
-          }
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (refreshing) {
+          return;
         }
-      };
-      registerServiceWorker();
+        refreshing = true;
+        window.location.reload();
+      })
+      navigator.serviceWorker.register("service-worker.js").then(reg => {
+        if (reg.waiting) {
+          reg.waiting.postMessage({ type: 'SKIP_WAITING' })
+        }
+      });
     }
   </script>
   <script type="text/javascript">
@@ -144,7 +131,7 @@
         document.body.appendChild(domScript);
       }
 
-      loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.746a3.js', function () {
+      loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.c6467.js', function () {
         if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
           loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
         }
