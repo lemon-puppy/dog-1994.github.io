@@ -46,18 +46,14 @@
             document.cookie = name + "=" + (value || "") + expires + "; path=/";
         }
 
-        function copyToClip(contentText, callBack = null) {
-            if(contentText == null)return;
-            alert(contentText);
-            let inputEle = document.createElement("input");
-            inputEle.setAttribute('readonly', 'readonly');
-            inputEle.setAttribute("value", contentText);
-            document.body.appendChild(inputEle);
-            inputEle.select();
-            inputEle.setSelectionRange(0, contentText.length)
-            document.execCommand("copy");
-            document.body.removeChild(inputEle);
-            callBack && callBack();
+        function copyToClip(contentText) {
+            navigator.clipboard.writeText(contentText)
+                .then(() => {
+                    alert("Text copied to clipboard!");
+                })
+                .catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
     };
 
         function getOS() {
