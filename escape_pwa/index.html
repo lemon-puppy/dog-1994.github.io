@@ -50,7 +50,6 @@
       j.src = 'https://d.alicdn.com/alilog/mlog/aplus/' + i + '.js';
       f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'aplus_queue', '203467608');
-
     //集成应用的appKey
     aplus_queue.push({
       action: 'aplus.setMetaInfo',
@@ -68,6 +67,14 @@
       action: 'aplus.setMetaInfo',
       arguments: ['DEBUG', false]
     });
+    // aplus_queue.push({
+    //   action: 'aplus.setMetaInfo',
+    //   arguments: ['aplus-idtype', getUUID()] //取值参考见附表1
+    // });
+    aplus_queue.push({
+      action: 'aplus.sendPV',
+      arguments: [{ is_auto: false }] // 此处上报的数据暂时在后台没有展示
+    });
   </script>
 </head>
 
@@ -79,9 +86,9 @@
     </div>
   </div>
 
-  <script src="src/settings.7334c.js" charset="utf-8"></script>
+  <script src="src/settings.aa26d.js" charset="utf-8"></script>
 
-  <script src="main.da6ea.js" charset="utf-8"></script>
+  <script src="main.f5aaa.js" charset="utf-8"></script>
   <script>
     (function (a_, i_, r_, _b, _r, _i, _d, _g, _e) { if (!a_[_b]) { var n = function () { var c = i_.createElement(r_); c.onerror = function () { g.queue.filter(function (a) { return 0 <= _d.indexOf(a[0]) }).forEach(function (a) { a = a[1]; a = a[a.length - 1]; "function" === typeof a && a("error occur when load airbridge") }) }; c.async = 1; c.src = _r; "complete" === i_.readyState ? i_.head.appendChild(c) : a_.addEventListener("load", function h() { a_.removeEventListener("load", h); i_.head.appendChild(c) }) }, g = { queue: [], get isSDKEnabled() { return !1 } }; _i.concat(_d).forEach(function (c) { var a = c.split("."), h = a.pop(); a.reduce(function (p, q) { return p[q] = p[q] || {} }, g)[h] = function () { g.queue.push([c, arguments]) } }); a_[_b] = g; 0 < _g ? (_b = new (a_.XDomainRequest || a_.XMLHttpRequest), _i = function () { }, _b.open("GET", _r), _b.timeout = _g, _b.onload = function () { n() }, _b.onerror = _i, _b.onprogress = _i, _b.ontimeout = _i, _b.send()) : n() } })(window, document, "script", "airbridge", "//static.airbridge.io/sdk/latest/airbridge.min.js", "init startTracking fetchResource setBanner setDownload setDownloads openDeeplink setDeeplinks sendWeb setUserAgent setUserAlias addUserAlias setMobileAppData setUserId setUserEmail setUserPhone setUserAttributes clearUser setDeviceAlias removeDeviceAlias clearDeviceAlias setDeviceIFV setDeviceIFA setDeviceGAID events.send events.signIn events.signUp events.signOut events.purchased events.addedToCart events.productDetailsViewEvent events.homeViewEvent events.productListViewEvent events.searchResultViewEvent".split(" "), ["events.wait", "createTouchpoint"], 0);
 
@@ -90,23 +97,23 @@
       webToken: '0c8e3858cd0147dc9f186f1c4bf3b68c',
     })
   </script>
-  <script>
-    if ('serviceWorker' in window.navigator) {
-      let refreshing = false;
-      navigator.serviceWorker.addEventListener('controllerchange', () => {
-        if (refreshing) {
-          return;
-        }
-        refreshing = true;
-        window.location.reload();
-      })
-      navigator.serviceWorker.register("service-worker.js").then(reg => {
-        if (reg.waiting) {
-          reg.waiting.postMessage({ type: 'SKIP_WAITING' })
-        }
-      });
-    }
-  </script>
+    <script>
+      if ('serviceWorker' in window.navigator) {
+        let refreshing = false;
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+          if (refreshing) {
+            return;
+          }
+          refreshing = true;
+          window.location.reload();
+        })
+        navigator.serviceWorker.register("service-worker.js").then(reg => {
+          if (reg.waiting) {
+            reg.waiting.postMessage({ type: 'SKIP_WAITING' })
+          }
+        });
+      }
+    </script>
   <script type="text/javascript">
     (function () {
       // open web debugger console
