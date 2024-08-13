@@ -106,7 +106,7 @@
 
             const downloadLink = downloadLinks[os][language];
             const deepLink = deepLinks[os];
-            const hidden = false;
+            let hidden = false;
             if (os === 'iOS' || os === 'Android') {
                 // 尝试打开应用
                 window.location.href = deepLink;
