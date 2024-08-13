@@ -24,18 +24,6 @@
             }(),
         }
 
-        function generateDeviceFingerprint() {
-            const userAgent = navigator.userAgent;
-            const screenResolution = `${screen.width}x${screen.height}`;
-            const platform = navigator.platform;
-            const deviceInfo = `${userAgent}-${screenResolution}-${platform}`;
-
-            return crypto.subtle.digest("SHA-256", new TextEncoder().encode(deviceInfo)).then(hashBuffer => {
-                const hashArray = Array.from(new Uint8Array(hashBuffer));
-                return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-            });
-        }
-
         function setCookie(name, value, days) {
             var expires = "";
             if (days) {
@@ -49,7 +37,7 @@
         function copyToClip(contentText) {
             navigator.clipboard.writeText(contentText)
                 .then(() => {
-                    alert("Text copied to clipboard!");
+                    console.log("Text copied to clipboard!");
                 })
                 .catch(err => {
                     console.error('Failed to copy text: ', err);
@@ -100,10 +88,10 @@
                     'es': ''
                 },
                 'Android': {
-                    'en': 'https://space-battle-royale.com/en',
-                    'zh': 'https://space-battle-royale.com/pt',
-                    'pt': 'https://space-battle-royale.com/pt',
-                    'es': 'https://space-battle-royale.com/es'
+                    'en': 'https://space-battle-royale.com/en/dfw-en.apk',
+                    'zh': 'https://space-battle-royale.com/pt/dfw-pt.apk',
+                    'pt': 'https://space-battle-royale.com/pt/dfw-pt.apk',
+                    'es': 'https://space-battle-royale.com/sp/dfw-sp.apk'
                 },
                 'Other': {
                     'en': 'https://space-battle-royale.com/en',
@@ -126,7 +114,7 @@
                 // 如果应用未安装，重定向到下载链接
                 setTimeout(() => {
                     window.location.href = downloadLink;
-                }, 2500); // 2.5秒后跳转
+                }, 2000); // 2.5秒后跳转
             } else {
                 window.location.href = downloadLink;
             }
