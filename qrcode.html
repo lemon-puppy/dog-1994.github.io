@@ -9,6 +9,10 @@
 
 <body>
     <script>
+        let timer;
+        window.addEventListener("pagehide", () => {
+            clearTimeout(timer);
+        })
         var Terminal = {
             // 辨别移动终端类型
             platform: function () {
@@ -42,7 +46,7 @@
                 .catch(err => {
                     console.error('Failed to copy text: ', err);
                 });
-    };
+        };
 
         function getOS() {
             if (Terminal.platform.android) {
@@ -112,9 +116,9 @@
                 window.location.href = deepLink;
 
                 // 如果应用未安装，重定向到下载链接
-                setTimeout(() => {
+                timer = setTimeout(() => {
                     window.location.href = downloadLink;
-                }, 2000); // 2.5秒后跳转
+                }, 2500); // 2.5秒后跳转
             } else {
                 window.location.href = downloadLink;
             }
