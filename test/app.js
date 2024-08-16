@@ -1,4 +1,4 @@
-let deferredPrompt;
+var deferredPrompt;
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service-worker.js')
     .then(function (registration) {
@@ -29,6 +29,8 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 
 document.getElementById('install-button').addEventListener('click', () => {
+    console.log(deferredPrompt);
+    alert("123",deferredPrompt);
     if (deferredPrompt) {
         deferredPrompt.prompt();
         deferredPrompt.userChoice.then((choiceResult) => {
@@ -38,6 +40,7 @@ document.getElementById('install-button').addEventListener('click', () => {
                 console.log('用户取消了安装');
             }
             deferredPrompt = null;
+            alert("456",deferredPrompt);
         });
     }
 });
