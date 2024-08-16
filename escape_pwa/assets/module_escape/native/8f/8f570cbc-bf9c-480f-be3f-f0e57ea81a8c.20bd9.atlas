@@ -1,0 +1,48 @@
+
+zhuce.png
+size: 497,222
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Register Now
+  rotate: false
+  xy: 222, 9
+  size: 157, 22
+  orig: 157, 22
+  offset: 0, 0
+  index: -1
+Registre-se agora
+  rotate: false
+  xy: 222, 107
+  size: 189, 18
+  orig: 189, 18
+  offset: 0, 0
+  index: -1
+guang
+  rotate: false
+  xy: 2, 2
+  size: 218, 218
+  orig: 222, 222
+  offset: 2, 2
+  index: -1
+三角形 2
+  rotate: false
+  xy: 222, 127
+  size: 207, 93
+  orig: 207, 93
+  offset: 0, 0
+  index: -1
+图层 611
+  rotate: true
+  xy: 222, 33
+  size: 72, 77
+  orig: 83, 79
+  offset: 5, 1
+  index: -1
+矩形 608
+  rotate: true
+  xy: 431, 13
+  size: 207, 64
+  orig: 209, 66
+  offset: 1, 1
+  index: -1
