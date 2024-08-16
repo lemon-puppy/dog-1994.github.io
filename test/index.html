@@ -6,52 +6,7 @@
   <title>Hello PWA</title>
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <script>
-    let deferredPrompt;
 
-    // 监听 beforeinstallprompt 事件
-    window.addEventListener('beforeinstallprompt', (e) => {
-      // 阻止自动显示安装提示
-      e.preventDefault();
-      // 保存事件供以后使用
-      deferredPrompt = e;
-      // 显示安装按钮
-      document.getElementById('install-button').style.display = 'block';
-
-      document.getElementById('install-button').addEventListener('click', () => {
-        // 隐藏安装按钮
-        document.getElementById('install-button').style.display = 'none';
-        // 显示安装提示
-        deferredPrompt.prompt();
-        // 检查用户的安装选择
-        deferredPrompt.userChoice.then((choiceResult) => {
-          if (choiceResult.outcome === 'accepted') {
-            console.log('用户接受了安装');
-          } else {
-            console.log('用户取消了安装');
-          }
-          deferredPrompt = null;
-        });
-      });
-    });
-  </script>
-  <script>
-    if ('serviceWorker' in window.navigator) {
-      let refreshing = false;
-      navigator.serviceWorker.addEventListener('controllerchange', () => {
-        if (refreshing) {
-          return;
-        }
-        refreshing = true;
-        window.location.reload();
-      })
-      navigator.serviceWorker.register("service-worker.js").then(reg => {
-        if (reg.waiting) {
-          reg.waiting.postMessage({ type: 'SKIP_WAITING' })
-        }
-      });
-    }
-  </script>
 
   <link rel="manifest" href="manifest.json" />
 </head>
@@ -60,6 +15,7 @@
   <h3>Hello World</h3>
   <h3>test auto update222</h3>
   <button id="install-button" style="display: block;">安装到桌面</button>
+  <script src="app.js"></script>
 </body>
 
 
