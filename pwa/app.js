@@ -6,7 +6,6 @@ if (window.matchMedia('(display-mode: standalone)').matches) {
 }
 
 window.addEventListener('beforeinstallprompt', (e) => {
-    alert("beforeinstall");
     e.preventDefault();
     deferredPrompt = e;
     document.getElementById('install-button').style.display = 'block';
@@ -14,7 +13,6 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 document.getElementById('install-button').addEventListener('click', () => {
     console.log(deferredPrompt);
-    alert("123" + deferredPrompt);
     if (deferredPrompt) {
         deferredPrompt.prompt();
         deferredPrompt.userChoice.then((choiceResult) => {
@@ -24,7 +22,6 @@ document.getElementById('install-button').addEventListener('click', () => {
                 console.log('用户取消了安装');
             }
             deferredPrompt = null;
-            alert("456" + deferredPrompt);
         });
     }
 });
