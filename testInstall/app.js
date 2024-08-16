@@ -13,7 +13,7 @@ if ('serviceWorker' in window.navigator) {
         refreshing = true;
         window.location.reload();
     })
-    navigator.serviceWorker.register("service-worker.a0d68.js").then(reg => {
+    navigator.serviceWorker.register("service-worker.js").then(reg => {
         if (reg.waiting) {
             reg.waiting.postMessage({ type: 'SKIP_WAITING' })
         }
