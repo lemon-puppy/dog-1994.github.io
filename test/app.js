@@ -1,4 +1,9 @@
 var deferredPrompt;
+if (window.matchMedia('(display-mode: standalone)').matches) {
+    console.log('应用是从桌面启动的');
+} else {
+    console.log('应用不是从桌面启动的');
+}
 
 window.addEventListener('beforeinstallprompt', (e) => {
     alert("beforeinstall");
