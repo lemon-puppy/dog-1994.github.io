@@ -1,6 +1,7 @@
 var deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
+    alert("beforeinstall");
     e.preventDefault();
     deferredPrompt = e;
     document.getElementById('install-button').style.display = 'block';
