@@ -5,16 +5,18 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "./icons/scale_150.png",
+      "src": "/icons/scale_150.png",
       "sizes": "150x150",
       "type": "image/png"
     },
     {
-      "src": "./icons/scale_256.png",
+      "src": "/icons/scale_256.png",
       "sizes": "256x256",
       "type": "image/png"
     }
-  ]
+  ],
+  "description": ""
 }
