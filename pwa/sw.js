@@ -36,9 +36,6 @@ self.addEventListener('install', e => {
       }).then(() =>
         self.skipWaiting()
       )
-    // caches.open(cacheStorageKey)
-    //   .then(cache => cache.addAll(cacheList))
-    //   .then(() => self.skipWaiting())
   )
 })
 self.addEventListener('fetch', function (e) {
