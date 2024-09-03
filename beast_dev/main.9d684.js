@@ -34,12 +34,12 @@ var progressBar = splash.querySelector('.zbw-progress-bar span');
         }
 
         if (cc.sys.isMobile) {
-            if (settings.orientation === 'landscape') {
-                cc.view.setOrientation(cc.macro.ORIENTATION_LANDSCAPE);
-            }
-            else if (settings.orientation === 'portrait') {
+            // if (settings.orientation === 'landscape') {
+            //     cc.view.setOrientation(cc.macro.ORIENTATION_LANDSCAPE);
+            // }
+            // else if (settings.orientation === 'portrait') {
                 cc.view.setOrientation(cc.macro.ORIENTATION_PORTRAIT);
-            }
+            // }
             cc.view.enableAutoFullScreen([
                 cc.sys.BROWSER_TYPE_BAIDU,
                 cc.sys.BROWSER_TYPE_BAIDU_APP,
