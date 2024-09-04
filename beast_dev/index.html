@@ -68,10 +68,28 @@
     </div>
   </div> -->
 
-<script src="src/settings.cb59c.js" charset="utf-8"></script>
+<script src="src/settings.54ab6.js" charset="utf-8"></script>
 
-<script src="main.9d684.js" charset="utf-8"></script>
-<script src="uni.webview.1.5.6.js" charset="utf-8"></script>
+<script src="main.a0677.js" charset="utf-8"></script>
+<script src="uni.webview.1.5.6.03a93.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    document.addEventListener('UniAppJSBridgeReady', function () {
+      window.BackToApp = function () {
+        console.log("navigateBack");
+        uni.navigateBack({
+          delta: 1
+        });
+      };
+      window.MsgToApp = function (msg) {
+        console.log("msgBack", msg);
+        uni.postMessage({
+          data: {
+            action: msg
+          }
+        });
+      };
+    });
+  </script>
 <script type="text/javascript">
 (function () {
     // open web debugger console

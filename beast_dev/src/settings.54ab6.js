@@ -1,0 +1,1 @@
+window._CCSettings={platform:"web-mobile",groupList:["default"],collisionMatrix:[[true]],hasResourcesBundle:true,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/beastcoming/beastcoming.fire",orientation:"portrait",jsList:[],bundleVers:{internal:"d0832",resources:"91caa",audio:"26f44",prefabs:"0e884",main:"57967"}};
