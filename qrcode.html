@@ -107,21 +107,24 @@
             const downloadLink = downloadLinks[os][language];
             const deepLink = deepLinks[os];
             let hidden = false;
-            if (os === 'iOS' || os === 'Android') {
-                // 尝试打开应用
-                window.location.href = deepLink;
+            // if (os === 'iOS' || os === 'Android') {
+            //     // 尝试打开应用
+            //     window.location.href = deepLink;
 
-                // 如果应用未安装，重定向到下载链接
-                setTimeout(() => {
-                    if(!hidden){
-                        window.location.href = downloadLink;
-                    }
-                }, 2500); // 2.5秒后跳转
-            } else {
-                window.location.href = downloadLink;
+            //     // 如果应用未安装，重定向到下载链接
+            //     setTimeout(() => {
+            //         if(!hidden){
+            //             window.location.href = downloadLink;
+            //         }
+            //     }, 2500); // 2.5秒后跳转
+            // } else {
+            //     window.location.href = downloadLink;
+            // }
+            if (navigator.vibrate) {
+                navigator.vibrate([200, 100, 200, 100, 200]);
             }
-            document.addEventListener("visibilitychange",function(){
-                if(document.hidden){
+            document.addEventListener("visibilitychange", function () {
+                if (document.hidden) {
                     hidden = true;
                 }
             })
