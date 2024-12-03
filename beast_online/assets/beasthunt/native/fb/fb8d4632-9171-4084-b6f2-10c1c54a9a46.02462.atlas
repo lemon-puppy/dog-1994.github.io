@@ -1,0 +1,125 @@
+
+sqs_xunbao.png
+size: 218,142
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gaotou
+  rotate: false
+  xy: 101, 75
+  size: 65, 65
+  orig: 65, 65
+  offset: 0, 0
+  index: -1
+jiao
+  rotate: false
+  xy: 92, 4
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+koushui
+  rotate: false
+  xy: 187, 99
+  size: 7, 18
+  orig: 7, 18
+  offset: 0, 0
+  index: -1
+leida1
+  rotate: true
+  xy: 130, 2
+  size: 42, 41
+  orig: 42, 41
+  offset: 0, 0
+  index: -1
+leida2
+  rotate: true
+  xy: 67, 2
+  size: 38, 23
+  orig: 38, 27
+  offset: 0, 0
+  index: -1
+leida3
+  rotate: false
+  xy: 128, 46
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+msll_$da
+  rotate: false
+  xy: 185, 51
+  size: 24, 26
+  orig: 24, 26
+  offset: 0, 0
+  index: -1
+shouR
+  rotate: true
+  xy: 2, 2
+  size: 38, 63
+  orig: 38, 63
+  offset: 0, 0
+  index: -1
+texiao
+  rotate: true
+  xy: 101, 43
+  size: 30, 25
+  orig: 30, 25
+  offset: 0, 0
+  index: -1
+yanj
+  rotate: false
+  xy: 187, 119
+  size: 7, 21
+  orig: 7, 21
+  offset: 0, 0
+  index: -1
+yanjzzz
+  rotate: true
+  xy: 210, 2
+  size: 12, 6
+  orig: 12, 6
+  offset: 0, 0
+  index: -1
+z
+  rotate: true
+  xy: 192, 2
+  size: 12, 16
+  orig: 12, 16
+  offset: 0, 0
+  index: -1
+zuiba
+  rotate: true
+  xy: 173, 5
+  size: 40, 17
+  orig: 41, 17
+  offset: 0, 0
+  index: -1
+图层 28
+  rotate: false
+  xy: 2, 42
+  size: 97, 98
+  orig: 97, 98
+  offset: 0, 0
+  index: -1
+想法
+  rotate: false
+  xy: 157, 47
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+椭圆 3
+  rotate: false
+  xy: 192, 16
+  size: 22, 33
+  orig: 22, 33
+  offset: 0, 0
+  index: -1
+椭圆 4
+  rotate: true
+  xy: 168, 79
+  size: 61, 17
+  orig: 63, 17
+  offset: 1, 0
+  index: -1

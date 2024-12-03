@@ -1,0 +1,62 @@
+
+putong_fanji.png
+size: 75,76
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiao
+  rotate: false
+  xy: 35, 5
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+msll_changmaoda
+  rotate: false
+  xy: 52, 54
+  size: 17, 20
+  orig: 17, 20
+  offset: 0, 0
+  index: -1
+shouR
+  rotate: true
+  xy: 2, 4
+  size: 19, 31
+  orig: 19, 31
+  offset: 0, 0
+  index: -1
+yanj
+  rotate: true
+  xy: 52, 26
+  size: 4, 11
+  orig: 4, 11
+  offset: 0, 0
+  index: -1
+zuiba
+  rotate: true
+  xy: 52, 32
+  size: 20, 8
+  orig: 20, 8
+  offset: 0, 0
+  index: -1
+图层 28
+  rotate: false
+  xy: 2, 25
+  size: 48, 49
+  orig: 48, 49
+  offset: 0, 0
+  index: -1
+椭圆 3
+  rotate: false
+  xy: 62, 35
+  size: 11, 17
+  orig: 11, 17
+  offset: 0, 0
+  index: -1
+椭圆 4
+  rotate: true
+  xy: 65, 2
+  size: 31, 8
+  orig: 31, 8
+  offset: 0, 0
+  index: -1

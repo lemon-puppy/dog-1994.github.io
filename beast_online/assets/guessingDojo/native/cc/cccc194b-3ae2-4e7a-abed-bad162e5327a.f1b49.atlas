@@ -1,0 +1,13 @@
+
+caidai.png
+size: 20,35
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+caidai
+  rotate: false
+  xy: 2, 2
+  size: 16, 31
+  orig: 16, 31
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,48 @@
+
+tpw.png
+size: 435,502
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+msll_ditu_tpwxz
+  rotate: true
+  xy: 2, 2
+  size: 247, 305
+  orig: 247, 306
+  offset: 0, 1
+  index: -1
+图层 1
+  rotate: true
+  xy: 2, 251
+  size: 249, 308
+  orig: 249, 308
+  offset: 0, 0
+  index: -1
+图层 2
+  rotate: false
+  xy: 312, 310
+  size: 121, 190
+  orig: 126, 200
+  offset: 4, 5
+  index: -1
+图层 3
+  rotate: false
+  xy: 312, 200
+  size: 109, 108
+  orig: 114, 113
+  offset: 2, 3
+  index: -1
+图层 4
+  rotate: true
+  xy: 309, 114
+  size: 84, 113
+  orig: 91, 121
+  offset: 3, 4
+  index: -1
+未标题-1
+  rotate: false
+  xy: 309, 29
+  size: 83, 83
+  orig: 83, 83
+  offset: 0, 0
+  index: -1

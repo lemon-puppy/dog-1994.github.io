@@ -1,0 +1,69 @@
+
+ziji_fanji.png
+size: 94,137
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jiao
+  rotate: false
+  xy: 65, 29
+  size: 27, 27
+  orig: 27, 27
+  offset: 0, 0
+  index: -1
+msll_changmaoda
+  rotate: true
+  xy: 33, 34
+  size: 26, 30
+  orig: 26, 30
+  offset: 0, 0
+  index: -1
+msll_changmaojda
+  rotate: true
+  xy: 33, 6
+  size: 26, 30
+  orig: 26, 30
+  offset: 0, 0
+  index: -1
+shouR
+  rotate: false
+  xy: 2, 9
+  size: 29, 47
+  orig: 29, 47
+  offset: 0, 0
+  index: -1
+yanj
+  rotate: true
+  xy: 2, 2
+  size: 5, 16
+  orig: 5, 16
+  offset: 0, 0
+  index: -1
+zuiba
+  rotate: true
+  xy: 78, 58
+  size: 30, 12
+  orig: 30, 12
+  offset: 0, 0
+  index: -1
+图层 28
+  rotate: true
+  xy: 2, 62
+  size: 73, 74
+  orig: 73, 74
+  offset: 0, 0
+  index: -1
+椭圆 3
+  rotate: true
+  xy: 65, 10
+  size: 17, 25
+  orig: 17, 25
+  offset: 0, 0
+  index: -1
+椭圆 4
+  rotate: true
+  xy: 78, 90
+  size: 45, 12
+  orig: 47, 12
+  offset: 1, 0
+  index: -1

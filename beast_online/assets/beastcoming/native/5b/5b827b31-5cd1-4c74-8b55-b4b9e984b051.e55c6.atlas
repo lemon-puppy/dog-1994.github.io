@@ -1,0 +1,104 @@
+
+hdc.png
+size: 390,1008
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+msll_ditu_hdc
+  rotate: true
+  xy: 2, 729
+  size: 277, 263
+  orig: 278, 263
+  offset: 1, 0
+  index: -1
+msll_ditu_hdcxz
+  rotate: true
+  xy: 2, 450
+  size: 277, 263
+  orig: 278, 263
+  offset: 1, 0
+  index: -1
+图层 4
+  rotate: true
+  xy: 2, 186
+  size: 262, 151
+  orig: 262, 151
+  offset: 0, 0
+  index: -1
+投影2
+  rotate: false
+  xy: 175, 53
+  size: 195, 134
+  orig: 200, 136
+  offset: 4, 1
+  index: -1
+旗子
+  rotate: false
+  xy: 267, 733
+  size: 110, 138
+  orig: 110, 138
+  offset: 0, 0
+  index: -1
+未标题-1
+  rotate: false
+  xy: 267, 454
+  size: 83, 83
+  orig: 83, 83
+  offset: 0, 0
+  index: -1
+杆子
+  rotate: false
+  xy: 267, 873
+  size: 121, 133
+  orig: 123, 135
+  offset: 1, 1
+  index: -1
+杆子2
+  rotate: true
+  xy: 2, 34
+  size: 150, 171
+  orig: 152, 173
+  offset: 1, 1
+  index: -1
+海盗船投影
+  rotate: false
+  xy: 2, 2
+  size: 223, 30
+  orig: 223, 30
+  offset: 0, 0
+  index: -1
+灯1
+  rotate: true
+  xy: 267, 539
+  size: 192, 95
+  orig: 192, 95
+  offset: 0, 0
+  index: -1
+灯2
+  rotate: true
+  xy: 282, 272
+  size: 180, 95
+  orig: 180, 95
+  offset: 0, 0
+  index: -1
+灯3
+  rotate: false
+  xy: 155, 189
+  size: 125, 259
+  orig: 130, 262
+  offset: 2, 1
+  index: -1
+灯4
+  rotate: true
+  xy: 352, 470
+  size: 67, 32
+  orig: 70, 36
+  offset: 2, 2
+  index: -1
+路灯
+  rotate: true
+  xy: 227, 23
+  size: 28, 130
+  orig: 49, 134
+  offset: 20, 3
+  index: -1

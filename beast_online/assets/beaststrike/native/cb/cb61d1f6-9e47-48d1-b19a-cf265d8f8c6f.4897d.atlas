@@ -1,0 +1,83 @@
+
+shashou_fanji.png
+size: 348,126
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 169, 41
+  size: 83, 61
+  orig: 84, 61
+  offset: 0, 0
+  index: -1
+daozi
+  rotate: true
+  xy: 302, 4
+  size: 65, 25
+  orig: 65, 25
+  offset: 0, 0
+  index: -1
+footl
+  rotate: false
+  xy: 232, 5
+  size: 18, 10
+  orig: 18, 10
+  offset: 0, 0
+  index: -1
+handl
+  rotate: false
+  xy: 232, 17
+  size: 26, 48
+  orig: 26, 48
+  offset: 0, 0
+  index: -1
+hangr
+  rotate: false
+  xy: 329, 24
+  size: 17, 45
+  orig: 17, 45
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 5
+  size: 165, 119
+  orig: 165, 141
+  offset: 0, 0
+  index: -1
+koudai1
+  rotate: false
+  xy: 232, 67
+  size: 68, 57
+  orig: 68, 57
+  offset: 0, 0
+  index: -1
+koudai2
+  rotate: false
+  xy: 329, 8
+  size: 15, 14
+  orig: 15, 14
+  offset: 0, 0
+  index: -1
+lh2
+  rotate: false
+  xy: 260, 18
+  size: 26, 47
+  orig: 26, 47
+  offset: 0, 0
+  index: -1
+pxue11
+  rotate: false
+  xy: 169, 2
+  size: 61, 37
+  orig: 61, 37
+  offset: 0, 0
+  index: -1
+tirl
+  rotate: true
+  xy: 302, 71
+  size: 53, 44
+  orig: 53, 44
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,104 @@
+
+paihangpifu.png
+size: 214,76
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1/1jiao
+  rotate: false
+  xy: 35, 6
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+1/1shouR
+  rotate: false
+  xy: 193, 43
+  size: 19, 31
+  orig: 19, 31
+  offset: 0, 0
+  index: -1
+1/1图层 28
+  rotate: true
+  xy: 2, 26
+  size: 48, 49
+  orig: 48, 49
+  offset: 0, 0
+  index: -1
+2/2jiao
+  rotate: false
+  xy: 55, 6
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+2/2shouR
+  rotate: false
+  xy: 193, 10
+  size: 19, 31
+  orig: 19, 31
+  offset: 0, 0
+  index: -1
+2/2图层 28
+  rotate: true
+  xy: 53, 26
+  size: 48, 49
+  orig: 48, 49
+  offset: 0, 0
+  index: -1
+3/3jiao
+  rotate: false
+  xy: 75, 6
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+3/3shouR
+  rotate: true
+  xy: 2, 5
+  size: 19, 31
+  orig: 19, 31
+  offset: 0, 0
+  index: -1
+3/3图层 28
+  rotate: true
+  xy: 104, 26
+  size: 48, 49
+  orig: 48, 49
+  offset: 0, 0
+  index: -1
+pifeng
+  rotate: true
+  xy: 155, 12
+  size: 62, 36
+  orig: 62, 36
+  offset: 0, 0
+  index: -1
+zuiba
+  rotate: false
+  xy: 147, 2
+  size: 20, 8
+  orig: 20, 8
+  offset: 0, 0
+  index: -1
+椭圆 3
+  rotate: true
+  xy: 95, 13
+  size: 11, 17
+  orig: 11, 17
+  offset: 0, 0
+  index: -1
+椭圆 4
+  rotate: false
+  xy: 114, 4
+  size: 31, 8
+  orig: 31, 8
+  offset: 0, 0
+  index: -1
+眼镜
+  rotate: false
+  xy: 114, 14
+  size: 33, 10
+  orig: 33, 10
+  offset: 0, 0
+  index: -1
